@@ -1,15 +1,15 @@
 /*
-Title: Intelligence Agency Proof Phone Life Protection
+Title: Intelligence Agency Proof Phone Line Protection
 Description: “We believe in building safe, valuable phone connections around the world.”
 */
 
 <header class="text-center" id="header">
 	<div class="container">
-		<img src="themes/bootstrap/img/logo.png" alt="Globacom" width="465" height="85" class="img-responsive logo">
+		<img src="themes/bootstrap/img/logo.png" alt="Globacom" width="465" height="85" class="img-responsive hidden-xs logo">
 		<div class="tagline">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h1>“We believe in building safe, valuable <br>phone connections around the world.”</h1>
+				<div class="col-md-12 col-lg-8 col-lg-offset-2">
+					<h1>“We believe in building safe, valuable phone connections around the world.”</h1>
 				</div>
 			</div>
 		</div>
@@ -19,54 +19,65 @@ Description: “We believe in building safe, valuable phone connections around t
 <section class="one" id="we-provide">
 	<div class="container">
 		<h2>We Provide <span class="divider">&nbsp;</span></h2>
-		<div class="row">
-			<div class="col-md-2 big-number">
+		<div class="row consumer">
+			<div class="col-sm-2 col-md-2 big-number">
 				1
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-10 col-md-4">
 				<h3>Proshield<span class="tm">&trade;</span></h3>
-				<p class="lead"><strong>Virtual PBX</strong> services for your business with 3 levels of security to choose from. <br><small><em>18px Best for consumer companies</em></small></p>
+				<p class="lead"><strong>Virtual PBX</strong> services for your business with 3 levels of security to choose from. <span><small><em>Best for consumer companies</em></small></span></p>
 			</div>
-			<div class="col-md-3 levels">
+			<div class="col-sm-12 col-md-3 levels levels-consumer">
 				<div class="level">
 					<span>High</span>
 					<div class="rating pull-right">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 					</div>
 				</div>
 				<div class="level">
 					<span>Advanced</span>
 					<div class="rating pull-right">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 					</div>
 				</div>
 				<div class="level">
 					<span>Basic</span>
 					<div class="rating pull-right">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 text-center belief">
+			<div class="col-sm-12 col-md-3 text-center belief">
 				“Because your privacy is paramount”
 			</div>
 		</div>
 		<hr>
-		<div class="row">
-			<div class="col-md-2 big-number">
+		<div class="row executive">
+			<div class="col-sm-2 col-md-2 big-number">
 				2
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-10 col-md-4">
 				<h3>Executive Shield<span class="tm">&trade;</span></h3>
-				<p class="lead"><strong>Phone line protection</strong> exceeding all levels of international intelligence gathering including NSA. <br><small><em>Best for all high level security needs</em></small></p>
+				<p class="lead"><strong>Phone line protection</strong> exceeding all levels of international intelligence gathering including NSA. <span><small><em>Best for all high level security needs</em></small></span></p>
 			</div>
-			<div class="col-md-3">
-				Ultimate Here
+			<div class="col-sm-12 col-md-3 levels levels-executive">
+				<div class="level">
+					<span>Ultimate</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+				<div class="level">
+					<img src="themes/bootstrap/img/phone-line2.png" alt="" width="201" height="199" class="img-responsive center-block">
+				</div>
 			</div>
-			<div class="col-md-3 text-center belief">
+			<div class="col-sm-12 col-md-3 text-center belief">
 				“Because your connections are crucial”
 			</div>
 		</div>
@@ -135,8 +146,11 @@ Description: “We believe in building safe, valuable phone connections around t
 					<li>USA</li>
 				</ol>
 			</div>
-			<div class="col-md-3 text-center belief">
+			<div class="col-md-3 visible-md visible-lg text-center belief">
 				"Because your voice is <br>valuable"
+			</div>
+			<div class="col-md-3 visible-sm visible-xs text-center belief">
+				"Because your voice is valuable"
 			</div>
 		</div>
 	</div>
@@ -146,7 +160,7 @@ Description: “We believe in building safe, valuable phone connections around t
 	<div class="container">
 		<h2>Contact <span class="divider">&nbsp;</span></h2>
 		<div class="row">
-			<div class="col-md-4 col-md-offset-2">
+			<div class="col-sm-12 col-md-7 col-md-offset-2 contact-details">
 				<p class="lead"><a href="mailto:hello@globacom.com">hello@globacom.com</a></p>
 				<address>
 					Globacom Ltd. <br>
@@ -159,7 +173,7 @@ Description: “We believe in building safe, valuable phone connections around t
 					<a href="http://www.instagram.com/globacom"><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
-			<div class="col-md-3 pull-right text-center belief">
+			<div class="col-sm-12 col-md-3 text-center belief">
 				“Because your words carry weight”
 			</div>
 		</div>
