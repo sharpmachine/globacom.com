@@ -100,12 +100,16 @@ section.one {
   background: center center no-repeat;
 
   @media (min-width: @screen-md) and (max-width: @screen-md-max) {
-    padding: 28px 12px;
+    padding: 46px 12px;
   }
 }
 
 .levels-consumer {
   .img-retina("../img/tower.png", "../img/tower@2x.png", 122px, 285px);
+
+  @media (min-width: @screen-md) and (max-width: @screen-md-max) {
+    margin-top: -18px;
+  }
 }
 
 .level {
