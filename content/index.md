@@ -167,7 +167,7 @@ Description: “We believe in building safe, valuable phone connections around t
 					6340 Baar ZG, <br>
 					Switzerland
 				</address>
-				<div class="social-media">
+				<div class="social-media hidden-print">
 					<a href="http://www.facebook.com/globacom"><i class="fa fa-facebook"></i></a>
 					<a href="http://www.twitter.com/globacom"><i class="fa fa-twitter"></i></a>
 					<a href="http://www.instagram.com/globacom"><i class="fa fa-instagram"></i></a>
