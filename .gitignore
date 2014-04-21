@@ -16,3 +16,6 @@ Thumbs.db
 
 # User config
 config.php
+
+# Node modules
+node_modules

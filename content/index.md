@@ -24,20 +24,12 @@ Description: “We believe in building safe, valuable phone connections around t
 				1
 			</div>
 			<div class="col-sm-10 col-md-4">
-				<h3>Proshield<span class="tm">&trade;</span></h3>
-				<p class="lead"><strong>Virtual PBX</strong> services for your business with 3 levels of security to choose from. <span><small><em>Best for consumer companies</em></small></span></p>
+				<h3>Proshield Single Line<span class="tm">&trade;</span></h3>
+				<p class="lead"><strong>Phone line/SIP Accounts</strong> services for your business with 2 levels of security to choose from. <span><small><em>Best for consumer companies and resellers for a single phone line</em></small></span></p>
 			</div>
 			<div class="col-sm-12 col-md-3 levels levels-consumer">
 				<div class="level">
 					<span>High</span>
-					<div class="rating pull-right">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-					</div>
-				</div>
-				<div class="level">
-					<span>Advanced</span>
 					<div class="rating pull-right">
 						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
@@ -55,13 +47,42 @@ Description: “We believe in building safe, valuable phone connections around t
 			</div>
 		</div>
 		<hr>
-		<div class="row executive">
+		<div class="row consumer">
 			<div class="col-sm-2 col-md-2 big-number">
 				2
 			</div>
 			<div class="col-sm-10 col-md-4">
-				<h3>Executive Shield<span class="tm">&trade;</span></h3>
-				<p class="lead"><strong>Phone line protection</strong> exceeding all levels of international intelligence gathering including NSA. <span><small><em>Best for all high level security needs</em></small></span></p>
+				<h3>Proshield Multi-line<span class="tm">&trade;</span></h3>
+				<p class="lead"><strong>Virtual PBX</strong><br> services for your business with 2 levels of security to choose from. <span><small><em>Best for consumer companies and resellers for many phone lines</em></small></span></p>
+			</div>
+			<div class="col-sm-12 col-md-3 levels levels-consumer">
+				<div class="level">
+					<span>High</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+				<div class="level">
+					<span>Basic</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3 text-center belief">
+				“Because your partners are valuable”
+			</div>
+		</div>
+		<hr>
+		<div class="row executive">
+			<div class="col-sm-2 col-md-2 big-number">
+				3
+			</div>
+			<div class="col-sm-10 col-md-4">
+				<h3>Executive Shield<span class="tm">&trade;</span><br>
+					<span class="small">For single &amp; multi-line protection</span></h3>
+				<p class="lead"><strong>Vitural PBX &amp; <br> Phone line/SIP Accounts</strong> exceeding all levels of international intelligence gathering. <span><small><em>For governments, financial and security organizations.</em></small></span></p>
 			</div>
 			<div class="col-sm-12 col-md-3 levels levels-executive">
 				<div class="level">
@@ -155,27 +176,3 @@ Description: “We believe in building safe, valuable phone connections around t
 		</div>
 	</div>
 </section>
-
-<footer id="contact">
-	<div class="container">
-		<h2>Contact <span class="divider">&nbsp;</span></h2>
-		<div class="row">
-			<div class="col-sm-12 col-md-7 col-md-offset-2 contact-details">
-				<p class="lead"><a href="mailto:hello@globacom.com">hello@globacom.com</a></p>
-				<address>
-					Globacom Ltd. <br>
-					6340 Baar ZG, <br>
-					Switzerland
-				</address>
-				<div class="social-media hidden-print">
-					<a href="http://www.facebook.com/globacom"><i class="fa fa-facebook"></i></a>
-					<a href="http://www.twitter.com/globacom"><i class="fa fa-twitter"></i></a>
-					<a href="http://www.instagram.com/globacom"><i class="fa fa-instagram"></i></a>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-3 text-center belief">
-				“Because your words carry weight”
-			</div>
-		</div>
-	</div>
-</footer>
