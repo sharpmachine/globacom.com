@@ -20,4 +20,5 @@ config.php
 # Node modules
 node_modules
 
-.vagrant/*
+.vagrant
+poop
