@@ -19,3 +19,6 @@ config.php
 
 # Node modules
 node_modules
+
+.vagrant
+poop
