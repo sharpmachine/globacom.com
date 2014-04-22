@@ -37,8 +37,18 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    'themes/bootstrap/js/script.min.js': [
-                    'themes/bootstrap/js/script.js'
+                    'themes/bootstrap/js/plugins.min.js': [
+                        'themes/bootstrap/js/affix.js',
+                        'themes/bootstrap/js/transition.js',
+                        'themes/bootstrap/js/tab.js',
+                        'themes/bootstrap/js/button.js',
+                        'themes/bootstrap/js/collapse.js',
+                        'themes/bootstrap/js/dropdown.js',
+                        'themes/bootstrap/js/onePageNavi.js',
+                        'themes/bootstrap/js/scrollTo.js'
+                    ],
+                    'themes/bootstrap/js/scripts.min.js': [
+                        'themes/bootstrap/js/scripts.js'
                     ]
                 }
             }
@@ -68,7 +78,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: [
-                'themes/bootstrap/js/script.js'
+                'themes/bootstrap/js/scripts.js'
                 ],
                 tasks: ['uglify']
             },

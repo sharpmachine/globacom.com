@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('.navbar').onePageNav();
+	// $('.navbar').onePageNav();
 });

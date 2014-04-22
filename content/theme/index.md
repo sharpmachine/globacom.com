@@ -7,11 +7,7 @@ Author: Jesse Kade of Sharp Machine Media
 <div class="container">
 	<h1>Theme</h1>
 
-	<p class="lead">Possible global CSS settings adopted from Bootstrap.  Just add the HTML for whichever global CSS settings are needed, then style it.  The most common are included already.</p>
-
-	<p>You should always set your typography and other global CSS settings first, following by any other theme components.</p>
-
-	<p>For more options see <a href="http://getbootstrap.com/css">Bootstrap Docs: CSS</a> | <a href="components">Go to Components &#10141;</a></p>
+	<p class="lead">Global CSS settings for Globacom.</p>
 
 	<ol>
 		<li><a href="#typography">Typography</a></li>
@@ -70,13 +66,13 @@ Author: Jesse Kade of Sharp Machine Media
 
 	<h2><a name="tables" id="tables">Tables</a></h2>
 
-	<table class="table">
+	<table class="table table-striped table-bordered">
 		<thead>
 			<tr>
 				<th>Option 1</th>
 				<th>Option 2</th>
 				<th>Option 3</th>
-				<th>Option 4</th>
+				<th class="font-light">Option 4</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -201,120 +197,64 @@ Author: Jesse Kade of Sharp Machine Media
 		<button type="button" class="btn btn-xs btn-danger">Danger</button>
 		<button type="button" class="btn btn-xs btn-link">Link</button>
 	</p>
+	<hr>
 
 	<h1>Components</h1>
 
-	<p class="lead">Possible Components adopted from Bootstrap.  Just add the HTML for whichever components are needed, then style it.  The most common are included already.</p>
-
-	<p>For more options see <a href="http://getbootstrap.com/components">Bootstrap Docs: Components</a> or <a href="http://getbootstrap.com/javascript/">Bootstrap Docs: Javascript</a> | <a href="theme">Go to Theme &#10141;</a></p>
-
-	<ol>
-		<li>Dropdowns</li>
-		<li>Button Groups</li>
-		<li>Button Dropdowns</li>
-		<li>Input Groups</li>
-		<li>Navs (Tabs, Pills or Justified)</li>
-		<li>Breadcrumbs</li>
-		<li>Paginations</li>
-		<li>Labels</li>
-		<li>Badges</li>
-		<li>Page Header</li>
-		<li>Alerts</li>
-		<li>Progress Bars</li>
-		<li>Modal</li>
-		<li>Tooltip</li>
-		<li>Popover</li>
-		<li>Carousel</li>
-	</ol>
-
-	<h2>Dropdowns</h2>
-
-	<div class="dropdown">
-		<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-			Dropdown
-			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-			<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-			<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-			<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-			<li role="presentation" class="divider"></li>
-			<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-		</ul>
-	</div>
-
-	<hr>
-
-	<h2>Input groups</h2>
-
-	<div class="form-group">
-		<div class="input-group input-group-lg">
-			<input class="form-control" type="text" />
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">Go!</button>
-			</span>
-		</div>
-	</div>
-
-	<div class="form-group">
-		<div class="input-group">
-			<input class="form-control" type="text" />
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">Go!</button>
-			</span>
-		</div>
-	</div>
-
-	<div class="form-group">
-		<div class="input-group input-group-sm">
-			<input class="form-control" type="text" />
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button">Go!</button>
-			</span>
-		</div>
-	</div>
-
-	<hr>
-
 	<h2>Navs</h2>
-
-	<h3>Tabs</h3>
-
-	<ul class="nav nav-tabs">
-		<li class="active"><a href="#">Home</a></li>
-		<li><a href="#">Profile</a></li>
-		<li><a href="#">Messages</a></li>
-	</ul>
-
-	<h3>Pills</h3>
 	
-	<ul class="nav nav-pills">
-		<li class="active"><a href="#">Home</a></li>
-		<li><a href="#">Profile</a></li>
-		<li><a href="#">Messages</a></li>
-	</ul>
-
-	<hr>
-
-	<h2>Pagination</h2>
-
-	<ul class="pagination">
-		<li><a href="#">&laquo;</a></li>
-		<li><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li><a href="#">&raquo;</a></li>
-	</ul>
-
-	<hr>
-
-	<h2>Page Header</h2>
-
-	<div class="page-header">
-		<h1>Example page header <small>Subtext for header</small></h1>
-	</div>
-
 </div>
 
+<div class="container">
+	<h3>Tabs</h3>
+</div>
+
+<section class="blue-light tabs">
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab">Overview</a></li>
+			<li><a href="#profile" data-toggle="tab">Technical Details</a></li>
+			<li><a href="#messages" data-toggle="tab">Messages</a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="home">
+				<h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
+				<p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
+			</div>
+			<div class="tab-pane" id="profile">...</div>
+			<div class="tab-pane" id="messages">...</div>
+		</div>
+	</div>
+</section>
+<div class="container hidden">
+	<h4>Tabs Inverse (for use when using two tabs in the same section)</h4>
+</div>
+<section class="tabs-inverse">
+	<div class="container">
+		<ul class="nav nav-tabs nav-tabs-inverse">
+			<li class="active"><a href="#home2" data-toggle="tab">Overview</a></li>
+			<li><a href="#profile2" data-toggle="tab">Technical Details</a></li>
+			<li><a href="#messages2" data-toggle="tab">Messages</a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content tab-content-inverse">
+			<div class="tab-pane active" id="home2">
+				<h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
+				<p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
+			</div>
+			<div class="tab-pane" id="profile2">...</div>
+			<div class="tab-pane" id="messages2">...</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+	<h2>Page Header</h2>
+</div>
+
+<div class="page-header text-center">
+	<div class="container">
+		<h1>Example page header</h1>
+	</div>
+</div>
