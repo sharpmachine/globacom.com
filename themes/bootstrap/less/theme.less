@@ -2,6 +2,7 @@
 /*..................................the core mixins and variables */
 @import "variables.less";
 @import "mixins.less";
+@space: @padding-base-vertical;
 
 /*..................................the typography */
 .oxygen-light {
@@ -83,6 +84,10 @@ small {
   color: white !important;
 }
 
+blockquote {
+
+}
+
 /*..................................the navbar */
 .navbar-default {
   background-color: white;
@@ -134,8 +139,6 @@ small {
   border-radius: 0;
 }
 
-@space: @padding-base-vertical;
-
 /*..................................the buttons */
 .btn {
   border: 0;
@@ -143,29 +146,80 @@ small {
   padding: 8px 16px;
 }
 
-//  Colors
+.btn-with-icon {
+  position: relative;
+  padding: 0;
+
+  .btn-label {
+    float: left;
+    padding: 8px 16px;
+  }
+
+  .btn-icon {
+    position: relative;
+    float: right;
+    height: 41px;
+    padding: 0 20px;
+    .border-right-radius(@border-radius-base);
+
+    .glyphicon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 18px;
+      margin: auto;
+    }
+  }
+}
+
 .btn-default {
-  background-color: @gray-lighter;
+  &.btn-with-icon {
+    .btn-icon {
+      background-color: darken(@btn-default-bg, 10%);
+    }
+  }
 }
 
 .btn-primary {
-  background-color: @brand-blue-light;
+  &.btn-with-icon {
+    .btn-icon {
+      background-color: lighten(@btn-primary-bg, 15%);
+    }
+  }
 }
 
-  // Success
-
-  .btn-info {
-    background-color: @brand-blue-dark;
+.btn-info {
+  &.btn-with-icon {
+    .btn-icon {
+      background-color: lighten(@btn-info-bg, 15%);
+    }
   }
-
- // Warning
-
- // Danger
+}
 
 // Sizes
 .btn-lg {
   padding: @padding-large-vertical*1.1 @padding-large-horizontal*1.5;
   font-size: 30px;
+
+  &.btn-with-icon {
+    padding: 0;
+
+    .btn-label {
+      padding: 11px 24px;
+    }
+
+    .btn-icon {
+      height: 61px;
+      padding: 0 30px;
+
+      .glyphicon {
+        height: 30px;
+      }
+    }
+  }
 }
 
 .btn-sm {
@@ -176,34 +230,26 @@ small {
   font-size: 12px;
 }
 
-// .btn-default {
+/*..................................the page header */
+.page-header {
+  padding: @space*13 0 @space*13+3;
+  background: @brand-blue-dark;
+  -webkit-background-size: cover;
+  background-size: cover;
 
-// }
-
-  // Small
-
-  // Extra Small
-
-  /*..................................the page header */
-  .page-header {
-    padding: @space*13 0 @space*13+3;
-    background: @brand-blue-dark;
-    -webkit-background-size: cover;
-    background-size: cover;
-
-    h1 {
-      color: white;
-    }
+  h1 {
+    color: white;
   }
+}
 
-  /*..................................the collapse */
-  #accordion {
-    border-bottom: 1px solid @brand-black;
+/*..................................the collapse */
+#accordion {
+  border-bottom: 1px solid @brand-black;
 
-    .panel {
-      position: relative;
-      margin-top: -5px;
-      border: 0;
+  .panel {
+    position: relative;
+    margin-top: -5px;
+    border: 0;
     // border-top: 1px solid @brand-black;
     .box-shadow(none);
   }
