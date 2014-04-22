@@ -142,10 +142,11 @@ Author: Jesse Kade of Sharp Machine Media
 			</label>
 		</div>
 		<div class="checkbox">
-			<label>
-				<input type="checkbox"> Check me out
-			</label>
+			<input type="checkbox" id="checkbox-1" />
+			<label for="checkbox-1"><span class="sr-only">Checkbox</span></label>
+			<div class="checkbox-label">Check Me</div>
 		</div>
+		<br>
 		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 
@@ -165,6 +166,22 @@ Author: Jesse Kade of Sharp Machine Media
 		<button type="button" class="btn btn-lg btn-link">Link</button>
 	</p>
 
+	<h4>With Icons</h4>
+	<p>
+		<button type="button" class="btn btn-lg btn-default btn-with-icon">
+			<div class="btn-label">Cancel</div>
+			<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
+		</button>
+		<button type="button" class="btn btn-lg btn-primary btn-with-icon">
+			<div class="btn-label">Info</div>
+			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+		</button>
+		<button type="button" class="btn btn-lg btn-info btn-with-icon">
+			<div class="btn-label">Info</div>
+			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+		</button>
+	</p>
+
 	<h3>Defaut</h3>
 	<p>
 		<button type="button" class="btn btn-default">Default</button>
@@ -174,6 +191,19 @@ Author: Jesse Kade of Sharp Machine Media
 		<button type="button" class="btn btn-warning">Warning</button>
 		<button type="button" class="btn btn-danger">Danger</button>
 		<button type="button" class="btn btn-link">Link</button>
+	</p>
+	<h4>With icons</h4>
+	<p>
+
+		<button type="button" class="btn btn-primary btn-with-icon">
+			<div class="btn-label">Info</div>
+			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+		</button>
+
+		<button type="button" class="btn btn-info btn-with-icon">
+			<div class="btn-label">Info</div>
+			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+		</button>
 	</p>
 
 	<h3>Small</h3>
