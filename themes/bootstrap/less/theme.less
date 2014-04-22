@@ -85,7 +85,14 @@ small {
 }
 
 blockquote {
+  margin: @space*8 0;
+  padding: 0;
+  border: none;
 
+  p {
+    .libre-baskerville-italic();
+    font-size: 30px;
+  }
 }
 
 /*..................................the navbar */
@@ -439,6 +446,67 @@ blockquote {
 }
 
 // Checkboxes
+input[type=checkbox] {
+  display: none;
+}
+
+
+input[type=checkbox]+label {
+  cursor: pointer;
+  // font-size: 1em;
+}
+
+input[type=checkbox] + label {
+  // background-color: #F37900;
+  // padding: 18px 20px 18px 23px;
+  // border-radius: 1000px;
+  display: inline-block;
+  position: relative;
+  // border-top: 1px solid #ECA14F;
+  // margin-left: 30px;
+  // color: #FFF;
+  // font-size: 1.7em;
+  // width: 213px;
+  // text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  // border-bottom: 1px solid #552B09;
+}
+
+
+// Checkbox unchecked
+input[type=checkbox] + label:after {
+  content: ' ';
+  .square(32px);
+  position: absolute;
+  // top: 12px;
+  // right: 12px;
+  border-radius: @border-radius-base;
+  background-color: @brand-blue-light;
+}
+
+// Checkbox checked
+input[type=checkbox] + label:before {
+  content: ' ';
+  .square(20px);
+  position: absolute;
+  top: 6px;
+  right: -26px;
+  z-index: 999;
+  background: url(../img/checkmark.png) center -2px no-repeat;
+  display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+  display: block;
+}
+
+.checkbox {
+  padding-left: 0;
+}
+
+.checkbox-label {
+  margin-top: -5px;
+  margin-left: 40px;
+}
 
 /*..................................the tabs */
 .blue-light {

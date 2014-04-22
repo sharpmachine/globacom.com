@@ -142,10 +142,11 @@ Author: Jesse Kade of Sharp Machine Media
 			</label>
 		</div>
 		<div class="checkbox">
-			<label>
-				<input type="checkbox"> Check me out
-			</label>
+			<input type="checkbox" id="checkbox-1" />
+			<label for="checkbox-1"><span class="sr-only">Checkbox</span></label>
+			<div class="checkbox-label">Check Me</div>
 		</div>
+		<br>
 		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 
