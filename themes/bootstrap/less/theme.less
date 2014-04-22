@@ -154,9 +154,9 @@ small {
 
   // Success
 
-.btn-info {
-  background-color: @brand-blue-dark;
-}
+  .btn-info {
+    background-color: @brand-blue-dark;
+  }
 
  // Warning
 
@@ -184,19 +184,129 @@ small {
 
   // Extra Small
 
-/*..................................the page header */
-.page-header {
-  padding: @space*13 0 @space*13+3;
-  background: @brand-blue-dark;
-  -webkit-background-size: cover;
-  background-size: cover;
+  /*..................................the page header */
+  .page-header {
+    padding: @space*13 0 @space*13+3;
+    background: @brand-blue-dark;
+    -webkit-background-size: cover;
+    background-size: cover;
 
-  h1 {
-    color: white;
+    h1 {
+      color: white;
+    }
+  }
+
+  /*..................................the collapse */
+  #accordion {
+    border-bottom: 1px solid @brand-black;
+
+    .panel {
+      position: relative;
+      margin-top: -5px;
+      border: 0;
+    // border-top: 1px solid @brand-black;
+    .box-shadow(none);
+  }
+
+  .triangle {
+    position: relative;
+    top: 42px;
+    right: 5px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent @gray-lighter transparent;
+  }
+
+  // .panel-group .panel+.panel {
+  //   margin-top: 0;
+  // }
+
+  .panel-heading {
+    padding: 40px 0;
+    background-color: transparent;
+    border-top: 1px solid @brand-black;
+    // border-bottom: 0;
+    // border-color: @brand-black;
+    border-radius: 0;
+  }
+
+  .panel-title {
+
+    a {
+      display: block;
+      color: @brand-blue-light;
+
+      span {
+        position: relative;
+        top: -5px;
+        right: 35px;
+        .square(30px);
+        padding: 5px 10px;
+        line-height: .5;
+        color: white;
+        .oxygen-light();
+        font-size: 30px;
+        background-color: @brand-blue-light;
+        border-radius: 50%;
+
+        &:before {
+          content: "-";
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .triangle {
+        display: block;
+      }
+
+      &.collapsed {
+        color: @brand-blue-dark;
+        .oxygen-light();
+
+        span {
+          // .square(30px);
+          padding: 6px 7px;
+          color: white;
+          background-color: @gray-lighter;
+          // border-radius: 50%;
+
+          &:before {
+            content: "+";
+          }
+        }
+
+        &:hover {
+          color: @brand-blue-light;
+          text-decoration: none;
+
+          span {
+            // position: relative;
+            // top: -5px;
+            // .square(30px);
+            color: white;
+            background-color: @brand-blue-light;
+            // border-radius: 50%;
+          }
+        }
+
+        .triangle {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .panel-body {
+    padding: 30px;
+    background-color: @gray-lighter;
+    border-top: 0;
   }
 }
-
-/*..................................the collapse */
 
 /*..................................the table */
 @table-padding: @space*3;
@@ -253,7 +363,7 @@ small {
 
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
-background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .table-striped {
