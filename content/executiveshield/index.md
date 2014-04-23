@@ -11,7 +11,12 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 
 <section class="product-overview">
 	<div class="container">
-		<h2>ExecutiveShield</h2>
+		<h2>ExecutiveShield 
+			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+		</h2>
 		<p class="lead">Virtual PBX & Phone line/SIP Accounts exceeding all levels of international intelligence gathering.</p>
 		<p class="lead lead-italic">Best for governments, financial and security organizations.</p>
 		<h3>Product Features</h3>
@@ -291,10 +296,15 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 </section>
 
 <div class="container">
-	<h3>The Ultimate Level of Security</h3>
+	<h3>The Ultimate Level of Security 
+		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+	</h3>
 </div>
 
-<section class="product-benefits tabs blue-light">
+<section class="product-benefits tabs bg-blue-light">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-md-8">
@@ -345,12 +355,19 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 		<div class="col-xs-12 text-center">
 			<img src="themes/bootstrap/img/3levels_of_security@2x.png" width="604" height="208" alt="Security Infographic">
 		</div>
-		<div class="col-xs-12 text-right call-to-action">
-			Can our services help you? &nbsp;
-			<a href="get-info" class="btn btn-info btn-with-icon">
-				<div class="btn-label">Get in Touch</div>
-				<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
-			</a>
+	</div>
+</section>
+
+<section class="call-to-action bg-blue-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-right border-top">
+				Can our services help you? &nbsp;
+				<a href="get-info" class="btn btn-info btn-with-icon">
+					<div class="btn-label">Get in Touch</div>
+					<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>

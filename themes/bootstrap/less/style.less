@@ -312,6 +312,24 @@ footer {
 }
 
 /*..................................the product pages */
+.call-to-action {
+  // padding-top: 50px;
+  padding-bottom: 50px;
+  color: @brand-blue-dark;
+  .libre-baskerville-italic();
+  font-size: 30px;
+
+  a.btn {
+    .oxygen-normal();
+  }
+
+  .border-top {
+    margin-top: -50px;
+    padding-top: 50px;
+    border-top: 2px solid lighten(@brand-blue-light, 10%);
+  }
+}
+
 .product-benefits {
   .table {
     margin-top: 35px;
@@ -323,23 +341,20 @@ footer {
       }
     }
   }
-}
 
-.call-to-action {
-  margin-top: 50px;
-  padding-top: 50px;
-  color: @brand-blue-dark;
-  .libre-baskerville-italic();
-  font-size: 30px;
-  border-top: 2px solid lighten(@brand-blue-light, 10%);
-
-  a.btn {
-    .oxygen-normal();
+  &.tabs-inverse {
+    .table {
+      margin-top: 75px;
+    }
   }
 }
 
 .bg-gray {
   background-color: @gray-lighter;
+}
+
+.bg-blue-light {
+  background-color: @brand-blue-light;
 }
 
 // All products overview
