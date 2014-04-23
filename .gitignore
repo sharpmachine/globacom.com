@@ -21,4 +21,8 @@ config.php
 node_modules
 
 .vagrant
+<<<<<<< HEAD
+poop
+=======
 
+>>>>>>> d7010138ee15e5e8442ee13338891ec1c1606c96
