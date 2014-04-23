@@ -242,9 +242,6 @@ Author: Jesse Kade of Sharp Machine Media
 						<span class="collapse-open pull-right"></span>
 						<div class="triangle pull-right"></div>
 					</a>
-					<!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-						Collapsible Group Item #1
-					</a> -->
 				</h4>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse in">

@@ -32,6 +32,7 @@
 // Headings
 h1 {
   .libre-baskerville-italic;
+  letter-spacing: 2px;
 }
 
 h2,
@@ -74,6 +75,11 @@ p.lead {
     margin-bottom: -10px;
     line-height: 0.8;
   }
+}
+
+p.lead-italic {
+  color: @brand-blue-dark;
+  font-style: italic;
 }
 
 small {
@@ -239,6 +245,7 @@ blockquote {
 
 /*..................................the page header */
 .page-header {
+  margin-top: 0;
   padding: @space*13 0 @space*13+3;
   background: @brand-blue-dark;
   -webkit-background-size: cover;
@@ -366,19 +373,21 @@ blockquote {
 
 .table {
   // font-size: 18px;
-  border: 1px solid @brand-blue-dark;
+  // border: 1px solid @brand-blue-dark;
+  border: 0;
+
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 
   & > tbody,
   & > thead {
     & > tr {
-      & > th {
+      & > th,
+      & > td
+       {
         padding: @table-padding;
-        // border: 0
-      }
-
-      & > td {
-        padding: @table-padding;
-        // border: 0;
+        color: @brand-black;
+        .oxygen-normal();
       }
     }
   }
@@ -401,6 +410,7 @@ blockquote {
 }
 
 .table-bordered {
+  // border: none;
   & > tbody,
   & > thead {
     & > tr {
@@ -409,15 +419,15 @@ blockquote {
         border-top: 0;
         border-bottom: 0;
         border-color: @brand-blue-dark;
+
+        &:first-child {
+          border-left: 0;
+        }
       }
     }
   }
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td,
-.table-striped>tbody>tr:nth-child(odd)>th {
-  background-color: #f9f9f9;
-}
 
 .table-striped {
   & > tbody {
@@ -426,6 +436,12 @@ blockquote {
         & > td,
         & >th {
           background-color: lighten(@brand-blue-light, 30%);
+        }
+      }
+      &:nth-child(even) {
+        & > td,
+        & >th {
+          background-color: white;
         }
       }
     }
