@@ -88,7 +88,7 @@ module.exports = function(grunt) {
             livereload: {
                 files: [
                 'themes/bootstrap/css/*.css',
-                'themes/bootstrap/js/script.min.js',
+                'themes/bootstrap/js/scripts.min.js',
                 'themes/bootstrap/index.html',
                 'content/*.md',
                 'content/*/*.md',

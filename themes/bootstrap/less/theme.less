@@ -386,8 +386,20 @@ blockquote {
       & > td
        {
         padding: @table-padding;
-        color: @brand-black;
+        // color: @brand-black;
         .oxygen-normal();
+      }
+
+      & > th {
+
+      }
+
+      & > td {
+        color: @brand-black;
+
+        &:last-child {
+          border-right: none;
+        }
       }
     }
   }

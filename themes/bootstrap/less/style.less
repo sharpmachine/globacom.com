@@ -310,3 +310,66 @@ footer {
   border-width: 30px 110px 0 110px;
   border-color: #007bff transparent transparent transparent;
 }
+
+/*..................................the product pages */
+.product-benefits {
+  .table {
+    margin-top: 35px;
+    & > thead {
+      & > tr {
+        & > th:first-child {
+          color: @brand-blue-light;
+        }
+      }
+    }
+  }
+}
+
+.call-to-action {
+  margin-top: 50px;
+  padding-top: 50px;
+  color: @brand-blue-dark;
+  .libre-baskerville-italic();
+  font-size: 30px;
+  border-top: 2px solid lighten(@brand-blue-light, 10%);
+
+  a.btn {
+    .oxygen-normal();
+  }
+}
+
+.bg-gray {
+  background-color: @gray-lighter;
+}
+
+// All products overview
+.all-products-overview {
+  padding: 0;
+
+  h3 {
+    margin: 0;
+
+    .all-products-more-info {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+
+.all-products-bar {
+  // margin-bottom: 20px;
+  padding: 30px 0;
+  background-color: lighten(@gray-light, 20%);
+}
+
+.all-products-content {
+  display: none;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.caret.caret-up {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
