@@ -363,7 +363,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 		<div class="row">
 			<div class="col-xs-12 text-right border-top">
 				Can our services help you? &nbsp;
-				<a href="get-info" class="btn btn-info btn-with-icon">
+				<a href="request-info" class="btn btn-info btn-with-icon">
 					<div class="btn-label">Get in Touch</div>
 					<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
 				</a>

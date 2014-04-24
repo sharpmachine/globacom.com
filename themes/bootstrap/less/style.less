@@ -188,6 +188,7 @@ footer {
 
   .belief {
     margin-top: 35px;
+    font-size: 16px;
   }
 
   h2 {
@@ -308,12 +309,26 @@ footer {
 }
 
 /*..................................the about page */
+.about-banner {
+  position: relative;
+  margin-top: -66px;
+  width: 220px;
+  height: 565px;
+}
+
+.about-banner-content {
+  height: 565px - 30px;
+  background-color: @brand-blue-dark;
+}
 .banner-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 0px;
   height: 0px;
   border-style: solid;
   border-width: 30px 110px 0 110px;
-  border-color: #007bff transparent transparent transparent;
+  border-color: @brand-blue-dark transparent transparent transparent;
 }
 
 /*..................................the product pages */

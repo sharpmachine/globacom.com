@@ -132,17 +132,30 @@ blockquote {
       background: none;
     }
   }
+
+  .nav-pills {
+    margin-top: 5px;
+
+    & > li.active > a {
+      background-color: @brand-blue-light;
+    }
+
+    & > li.active > a:hover {
+      background-color: darken(@brand-blue-light, 10%);
+    }
+  }
 }
 
 .navbar-brand {
-  width: 38px;
+  // width: 38px;
+  width: auto;
   padding-top: 12px;
   overflow: hidden;
 
-  @media (max-width: @screen-xs-max) {
-    width: auto;
-    padding-top: 15px;
-  }
+  // @media (max-width: @screen-xs-max) {
+  //   width: auto;
+  //   padding-top: 15px;
+  // }
 }
 
 // Undo rounded corners in static and fixed navbars
@@ -384,7 +397,7 @@ blockquote {
     & > tr {
       & > th,
       & > td
-       {
+      {
         padding: @table-padding;
         // color: @brand-black;
         .oxygen-normal();

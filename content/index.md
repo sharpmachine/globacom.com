@@ -71,7 +71,7 @@ Description: “We believe in building safe, valuable phone connections around t
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-3 text-center belief">
-				“Because your partners are valuable”
+				“Because your words carry weight”
 			</div>
 		</div>
 		<hr>

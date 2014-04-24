@@ -32,7 +32,7 @@ Title: Request Info
 					<input type="text" class="form-control" placeholder="">
 				</div>
 				<div class="form-group">
-					<label for="zip">Zip/Postal</label>
+					<label for="zip">Zip Code/Postal Code</label>
 					<input type="text" class="form-control" placeholder="">
 				</div>
 				<div class="form-group">
@@ -69,10 +69,10 @@ Title: Request Info
 					<label for="checkbox-3"><span class="sr-only">Checkbox</span></label>
 					<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
 				</div>
-				<button type="button" class="btn btn-lg btn-default btn-with-icon">
+				<a href="request-info" class="btn btn-lg btn-default btn-with-icon">
 					<div class="btn-label">Cancel</div>
 					<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
-				</button>
+				</a>
 				<button type="button" class="btn btn-lg btn-primary btn-with-icon pull-right">
 					<div class="btn-label">Submit</div>
 					<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
