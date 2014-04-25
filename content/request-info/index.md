@@ -87,9 +87,11 @@ Title: Request Info
 							<div class="btn-icon"><span class="icon icon-hand-touch-3"></span></div>
 						</button>
 						<!-- <input type="submit" class="submit" id="submit" value="Submit" /> -->
-						<div class="alert alert-danger" id="message"></div>
 					</div>
-				</form>	
+				</form>
+				<div class="col-md-6 col-md-offset-6">
+					<div class="alert alert-danger" id="message"></div>
+				</div>
 			</div>
 		</div><!-- END: #contact -->
 	</div>
