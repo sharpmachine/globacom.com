@@ -155,7 +155,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 		<div class="row">
 			<div class="col-xs-12 text-right">
 				Can our services help you? &nbsp;
-				<a href="request-info" class="btn btn-info btn-with-icon">
+				<a href="request-info" class="btn btn-lg btn-info btn-with-icon">
 					<div class="btn-label">Get in Touch</div>
 					<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 				</a>
