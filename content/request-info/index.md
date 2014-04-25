@@ -2,7 +2,7 @@
 Title: Request Info
 */
 
-<!-- <div class="page-header text-center">
+<div class="page-header text-center">
 	<div class="container">
 		<h1>Thank you for your interest in our services</h1>
 		<p class="lead hidden">Your interest says that, just like us, you believe that privacy matters. It also says that you like the new, modern way of safe communications.</p>
@@ -17,84 +17,86 @@ Title: Request Info
 				<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p>
 			</div>
 		</div>
-		<div class="row">
-			<div id="message"></div>
-			<form role="form" method="post" action="contact-form/contact.php" name="contactform" id="contactform">
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="name">Full name</label>
-						<input type="text" class="form-control" id="name">
-					</div>
-					<div class="form-group">
-						<label for="Company">Company</label>
-						<input type="text" class="form-control" id="Company">
-					</div>
-					<div class="form-group">
-						<label for="Address">Address</label>
-						<input type="text" class="form-control" id="Address">
-					</div>
-					<div class="form-group">
-						<label for="City">City</label>
-						<input type="text" class="form-control" id="City">
-					</div>
-					<div class="form-group">
-						<label for="Zip">Zip Code/Postal Code</label>
-						<input type="text" class="form-control" id="Zip">
-					</div>
-					<div class="form-group">
-						<label for="Mobile">Mobile Phone</label>
-						<input type="text" class="form-control" id="Mobile">
-					</div>
-					<div class="form-group">
-						<label for="Landline">Landline</label>
-						<input type="text" class="form-control" id="Landline">
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="inspiring-photo hidden-xs">
-						<img src="themes/bootstrap/img/blue-lake.jpg" class="img-responsive" width="555" alt="blue-lake">
-						<div class="inspiring-photo-words text-center belief">
-							“Because your <br>connections are <br>crucial”
+		<div id="contact">
+			<div class="row">
+				<form role="form" method="post" action="contact-form/contact.php" name="contactform" id="contactform">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="name">Full name</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="company">Company</label>
+							<input type="text" class="form-control" id="company">
+						</div>
+						<div class="form-group">
+							<label for="address">Address</label>
+							<input type="text" class="form-control" id="address">
+						</div>
+						<div class="form-group">
+							<label for="city">City</label>
+							<input type="text" class="form-control" id="city">
+						</div>
+						<div class="form-group">
+							<label for="zip">Zip Code/Postal Code</label>
+							<input type="text" class="form-control" id="zip">
+						</div>
+						<div class="form-group">
+							<label for="mobile">Mobile Phone</label>
+							<input type="text" class="form-control" id="mobile">
+						</div>
+						<div class="form-group">
+							<label for="landline">Landline</label>
+							<input type="text" class="form-control" id="landline">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email">
 						</div>
 					</div>
+					<div class="col-sm-6">
+						<div class="inspiring-photo hidden-xs">
+							<img src="themes/bootstrap/img/blue-lake.jpg" class="img-responsive" width="555" alt="blue-lake">
+							<div class="inspiring-photo-words text-center belief">
+								“Because your <br>connections are <br>crucial”
+							</div>
+						</div>
 						<br class="hidden-xs">
 						<label for="interested">Interested in (Check all that apply):</label>
-					<div class="checkbox">
-						<input type="checkbox" id="Option1" />
-						<label for="Option1"><span class="sr-only">Checkbox</span></label>
-						<div class="checkbox-label">ProShield-Single-Line / SIP account</div>
+						<div class="checkbox">
+							<input type="checkbox" id="option1" />
+							<label for="option1"><span class="sr-only">Checkbox</span></label>
+							<div class="checkbox-label">ProShield-Single-Line / SIP account</div>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="option2" />
+							<label for="option2"><span class="sr-only">Checkbox</span></label>
+							<div class="checkbox-label">ProShield-Multi-Line / VirtualPBX</div>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="option3" />
+							<label for="option3"><span class="sr-only">Checkbox</span></label>
+							<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
+						</div>
+						<a href="request-info" class="btn btn-lg btn-default btn-with-icon hidden">
+							<div class="btn-label">Cancel</div>
+							<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
+						</a>
+						<button type="submit" class="btn btn-lg btn-primary btn-with-icon" id="submit">
+							<div class="btn-label">Submit</div>
+							<div class="btn-icon"><span class="icon icon-hand-touch-3"></span></div>
+						</button>
+						<!-- <input type="submit" class="submit" id="submit" value="Submit" /> -->
+						<div class="alert alert-danger" id="message"></div>
 					</div>
-					<div class="checkbox">
-						<input type="checkbox" id="Option2" />
-						<label for="Option2"><span class="sr-only">Checkbox</span></label>
-						<div class="checkbox-label">ProShield-Multi-Line / VirtualPBX</div>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox" id="Option3" />
-						<label for="Option3"><span class="sr-only">Checkbox</span></label>
-						<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
-					</div>
-					<a href="request-info" class="btn btn-lg btn-default btn-with-icon hidden">
-						<div class="btn-label">Cancel</div>
-						<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
-					</a>
-					<input type="submit" class="btn btn-lg btn-primary btn-with-icon">
-						<div class="btn-label">Submit</div>
-						<div class="btn-icon"><span class="icon icon-hand-touch-3"></span></div>
-					</input>
-					<input type="submit" class="submit" id="submit" value="Submit" />
-				</div>
-			</form>	
-		</div>
+				</form>	
+			</div>
+		</div><!-- END: #contact -->
 	</div>
-</section> --><!-- END: .request-info -->
+</section><!-- END: .request-info -->
 
 
-<div id="contact">
+<!-- <div id="contact">
 	<h1><abbr title="Asynchronous Javascript and XML">AJAX</abbr> Contact Form</h1>
 	<p>With just 2 files this can be easily integrated into any <b>HTML</b> or <b>PHP</b> page!</p>
 	<div id="message"></div>
@@ -125,4 +127,4 @@ Title: Request Info
 			<input type="submit" class="submit" id="submit" value="Submit" />
 		</fieldset>
 	</form>
-</div>
+</div> -->

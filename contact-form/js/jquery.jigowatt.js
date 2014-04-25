@@ -13,11 +13,11 @@ jQuery(document).ready(function(){
 
 		$.post(action, {
 			name: $('#name').val(),
-			email: $('#email').val(),
-			phone: $('#phone').val(),
-			subject: $('#subject').val(),
-			comments: $('#comments').val(),
-			verify: $('#verify').val()
+			mobile: $('#mobile').val(),
+			email: $('#email').val()
+			// subject: $('#subject').val(),
+			// comments: $('#comments').val(),
+			// verify: $('#verify').val()
 		},
 			function(data){
 				document.getElementById('message').innerHTML = data;

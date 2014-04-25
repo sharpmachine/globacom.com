@@ -9,47 +9,59 @@ function isEmail($email) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
-$name     = $_POST['name'];
-$email    = $_POST['email'];
-$phone   = $_POST['phone'];
-$subject  = $_POST['subject'];
-$comments = $_POST['comments'];
-$verify   = $_POST['verify'];
+// $name     = $_POST['name'];
+// $email    = $_POST['email'];
+// $phone   = $_POST['phone'];
+// $subject  = $_POST['subject'];
+// $comments = $_POST['comments'];
+// $verify   = $_POST['verify'];
+
+$name = $_POST['name'];
+$company = $_POST['company'];
+$address = $_POST['address'];
+$city = $_POST['city'];
+$zip = $_POST['zip'];
+$mobile = $_POST['mobile'];
+$landline = $_POST['landline'];
+$email = $_POST['email'];
+$option1 = $_POST['option1'];
+$option2 = $_POST['option2'];
+$option3 = $_POST['option3'];
 
 if(trim($name) == '') {
 	echo '<div class="error_message">Attention! You must enter your name.</div>';
 	exit();
+} else if(trim($mobile) == '') {
+	echo '<div class="error_message">Attention! Please enter a valid mobile number.</div>';
+	exit();
+} else if(!is_numeric($mobile)) {
+	echo '<div class="error_message">Attention! Phone number can only contain digits.</div>';
+	exit();
 } else if(trim($email) == '') {
 	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
-	exit();
-} else if(trim($phone) == '') {
-	echo '<div class="error_message">Attention! Please enter a valid phone number.</div>';
-	exit();
-} else if(!is_numeric($phone)) {
-	echo '<div class="error_message">Attention! Phone number can only contain digits.</div>';
 	exit();
 } else if(!isEmail($email)) {
 	echo '<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
 	exit();
 }
 
-if(trim($subject) == '') {
-	echo '<div class="error_message">Attention! Please enter a subject.</div>';
-	exit();
-} else if(trim($comments) == '') {
-	echo '<div class="error_message">Attention! Please enter your message.</div>';
-	exit();
-} else if(!isset($verify) || trim($verify) == '') {
-	echo '<div class="error_message">Attention! Please enter the verification number.</div>';
-	exit();
-} else if(trim($verify) != '4') {
-	echo '<div class="error_message">Attention! The verification number you entered is incorrect.</div>';
-	exit();
-}
+// if(trim($subject) == '') {
+// 	echo '<div class="error_message">Attention! Please enter a subject.</div>';
+// 	exit();
+// } else if(trim($comments) == '') {
+// 	echo '<div class="error_message">Attention! Please enter your message.</div>';
+// 	exit();
+// } else if(!isset($verify) || trim($verify) == '') {
+// 	echo '<div class="error_message">Attention! Please enter the verification number.</div>';
+// 	exit();
+// } else if(trim($verify) != '4') {
+// 	echo '<div class="error_message">Attention! The verification number you entered is incorrect.</div>';
+// 	exit();
+// }
 
-if(get_magic_quotes_gpc()) {
-	$comments = stripslashes($comments);
-}
+// if(get_magic_quotes_gpc()) {
+// 	$comments = stripslashes($comments);
+// }
 
 
 // Configuration option.
@@ -72,9 +84,19 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $name with regards to $subject, their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email or via phone $phone";
+$e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_content = "\"$name\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$company\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$address\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$city\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$zip\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$mobile\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$landline\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$email\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$option1\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$option2\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$option3\" \n" . PHP_EOL . PHP_EOL;
+$e_reply = "You can contact $name via email, $email or via phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -97,6 +119,6 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 } else {
 
-	echo 'ERROR!';
+	echo 'Oops!  Something went wrong.  Try emailing us directly at <a href="mailto:hello@globacom.com">hello@globacom.com</a> instead.';
 
 }
