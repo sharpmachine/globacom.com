@@ -299,8 +299,8 @@ Description: Virtual PBX services for your business with 2 levels of security to
 		<div class="row">
 			<div class="col-sm-6 col-md-8">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#basic-overview" data-toggle="tab">Overview</a></li>
-					<li><a href="#basic-technical-details" data-toggle="tab">Technical Details</a></li>
+					<li class="active"><a href="#basic-overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
+					<li><a href="#basic-technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
 				</ul>
 				<!-- Tab panes -->
 				<div class="tab-content">
@@ -358,8 +358,8 @@ Description: Virtual PBX services for your business with 2 levels of security to
 		<div class="row">
 			<div class="col-sm-6 col-md-8">
 				<ul class="nav nav-tabs nav-tabs-inverse">
-					<li class="active"><a href="#high-overview" data-toggle="tab">Overview</a></li>
-					<li><a href="#high-technical-details" data-toggle="tab">Technical Details</a></li>
+					<li class="active"><a href="#high-overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
+					<li><a href="#high-technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
 				</ul>
 				<!-- Tab panes -->
 				<div class="tab-content tab-content-inverse">
@@ -419,7 +419,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 				Can our services help you? &nbsp;
 				<a href="request-info" class="btn btn-info btn-with-icon">
 					<div class="btn-label">Get in Touch</div>
-					<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+					<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 				</a>
 			</div>
 		</div>

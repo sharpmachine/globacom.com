@@ -365,7 +365,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 				Can our services help you? &nbsp;
 				<a href="request-info" class="btn btn-info btn-with-icon">
 					<div class="btn-label">Get in Touch</div>
-					<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+					<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 				</a>
 			</div>
 		</div>

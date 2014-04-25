@@ -174,11 +174,11 @@ Author: Jesse Kade of Sharp Machine Media
 		</button>
 		<button type="button" class="btn btn-lg btn-primary btn-with-icon">
 			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 		</button>
 		<button type="button" class="btn btn-lg btn-info btn-with-icon">
 			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 		</button>
 	</p>
 
@@ -197,12 +197,12 @@ Author: Jesse Kade of Sharp Machine Media
 
 		<button type="button" class="btn btn-primary btn-with-icon">
 			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 		</button>
 
 		<button type="button" class="btn btn-info btn-with-icon">
 			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="glyphicon glyphicon-envelope"></span></div>
+			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
 		</button>
 	</p>
 
