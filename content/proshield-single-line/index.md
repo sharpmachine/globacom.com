@@ -94,10 +94,10 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 <section class="product-benefits tabs-inverse">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-8">
+			<div class="col-sm-6 col-lg-8">
 				<ul class="nav nav-tabs nav-tabs-inverse">
-					<li class="active"><a href="#high-overview" data-toggle="tab">Overview</a></li>
-					<li><a href="#high-technical-details" data-toggle="tab">Technical Details</a></li>
+					<li class="active"><a href="#high-overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
+					<li><a href="#high-technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
 				</ul>
 				<!-- Tab panes -->
 				<div class="tab-content tab-content-inverse">
@@ -115,7 +115,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
+			<div class="col-sm-6 col-lg-4">
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -167,7 +167,8 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 <section class="all-products-overview bg-gray">
 	<div class="all-products-bar">
 		<div class="container">
-			<h3>All Products Overview <a href="#" class="all-products-more-info pull-right">More Info <span class="caret"></span></a></h3>
+			<h3 class="hidden-xs">All Products Overview <a href="#" class="all-products-more-info pull-right">More Info <span class="caret"></span></a></h3>
+			<h3 class="visible-xs">All Products Overview <br><a href="#" class="all-products-more-info">More Info <span class="caret"></span></a></h3>
 		</div>
 	</div>
 	<div class="all-products-content">
@@ -176,19 +177,19 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 				<div class="col-xs-12">
 					<p class="lead">We are excited to offer three services with varying levels of security to protect your privacy:</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 product-description">
 					<h4>ProShield Single-Line</h4>
 					<p>Phone line/SIP accounts services for your business, with 2 levels of security to choose from.</p>
 					<p><em>Best for consumer companies and resellers with a single phone line.</em></p>
 					<p><a href="proshield-single-line">More Info</a></p>
 				</div>
-				<div class="col-sm-4">
-					<h4>ProShield Single-Line</h4>
+				<div class="col-sm-4 product-description">
+					<h4>ProShield Multi-Line</h4>
 					<p>Virtual PBX services for your business with 2 levels of security to choose from.</p>
 					<p><em>Best for consumer companies and resellers with many phone lines.</em></p>
 					<p><a href="proshield-multi-line">More Info</a></p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 product-description">
 					<h4>ExecutiveShield (for single or multiple phone lines)</h4>
 					<p>Vitural PBX & Phone line/SIP accounts exceeding all levels of international intelligence gathering.  <strong>This is the highest level of telecommunications security in existence.</strong></p>
 					<p><em>Best for governments, financial and security organizations.</em></p>

@@ -11,12 +11,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 
 <section class="product-overview">
 	<div class="container">
-		<h2>ExecutiveShield 
-			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-			<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
-		</h2>
+		<h2>ExecutiveShield</h2>
 		<p class="lead">Virtual PBX & Phone line/SIP Accounts exceeding all levels of international intelligence gathering.</p>
 		<p class="lead lead-italic">Best for governments, financial and security organizations.</p>
 		<h3>Product Features</h3>
@@ -307,10 +302,10 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 <section class="product-benefits tabs bg-blue-light">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-8">
+			<div class="col-sm-6 col-lg-8">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
-					<li><a href="#technical-details" data-toggle="tab">Technical Details</a></li>
+					<li class="active"><a href="#overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
+					<li><a href="#technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
 				</ul>
 				<!-- Tab panes -->
 				<div class="tab-content">
@@ -327,7 +322,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
+			<div class="col-sm-6 col-lg-4">
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -353,7 +348,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/3levels_of_security@2x.png" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/3levels_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>
@@ -375,7 +370,8 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 <section class="all-products-overview bg-gray">
 	<div class="all-products-bar">
 		<div class="container">
-			<h3>All Products Overview <a href="#" class="all-products-more-info pull-right">More Info <span class="caret"></span></a></h3>
+			<h3 class="hidden-xs">All Products Overview <a href="#" class="all-products-more-info pull-right">More Info <span class="caret"></span></a></h3>
+			<h3 class="visible-xs">All Products Overview <br><a href="#" class="all-products-more-info">More Info <span class="caret"></span></a></h3>
 		</div>
 	</div>
 	<div class="all-products-content">
@@ -384,19 +380,19 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 				<div class="col-xs-12">
 					<p class="lead">We are excited to offer three services with varying levels of security to protect your privacy:</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 product-description">
 					<h4>ProShield Single-Line</h4>
 					<p>Phone line/SIP accounts services for your business, with 2 levels of security to choose from.</p>
 					<p><em>Best for consumer companies and resellers with a single phone line.</em></p>
 					<p><a href="proshield-single-line">More Info</a></p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 product-description">
 					<h4>ProShield Multi-Line</h4>
 					<p>Virtual PBX services for your business with 2 levels of security to choose from.</p>
 					<p><em>Best for consumer companies and resellers with many phone lines.</em></p>
 					<p><a href="proshield-multi-line">More Info</a></p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 product-description">
 					<h4>ExecutiveShield (for single or multiple phone lines)</h4>
 					<p>Vitural PBX & Phone line/SIP accounts exceeding all levels of international intelligence gathering.  <strong>This is the highest level of telecommunications security in existence.</strong></p>
 					<p><em>Best for governments, financial and security organizations.</em></p>

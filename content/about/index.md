@@ -17,6 +17,10 @@ Description: We are excited to provide the safest phone connections worldwide, w
 				<p class="lead">We are excited to provide the safest phone connections worldwide, with the core values of innovation, integrity, and expertise.</p>
 				<p class="dropcap">It is our belief that privacy matters.  When making a phone call people should feel safe, knowing for a fact that nobody else is listening in - not even intelligence agencies.  Our uncompromising and impossible-to-crack voice encryption technology makes this available to everyone around the world.</p>
 				<p>Our passion is to provide worldwide secure telephone services over the internet, landlines and mobiles.</p>
+				<div class="visible-xs">
+					<br>
+					<img src="themes/bootstrap/img/banner-mobile@2x.png" width="272" alt="Secure Connection" class="img-responsive center-block">
+				</div>
 				<blockquote>
 					<p class="text-center">100% "Swissness"  - a culture of excellence.</p>
 				</blockquote>
@@ -24,7 +28,7 @@ Description: We are excited to provide the safest phone connections worldwide, w
 			<div class="col-sm-4 hidden-xs">
 				<div class="about-banner">
 					<div class="about-banner-content">
-						<img src="themes/bootstrap/img/banner@2x.png" class="center-block" width="77" height=""alt="">
+						<img src="themes/bootstrap/img/banner@2x.png" class="center-block" width="77" alt="Secure Connection">
 					</div>
 					<div class="banner-bottom"></div>
 				</div>
