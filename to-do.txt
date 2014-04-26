@@ -4,6 +4,5 @@
 -fix dotted border on the "Product Features" titels on ProShield Multi-Line Page and ExecutiveShield page
 -fix dotted border on the "Overview" and "Technical Details" on ProShield Single-Line, ProShield Multi-Line Page and ExecutiveShield page
 -fix dotted border on all top menu buttons
--fis broken line in "overview and technical details" on all product pages
 
 

@@ -18,7 +18,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $name = $_POST['name'];
 $company = $_POST['company'];
-$address = $_POST['address'];
+$your_address = $_POST['address'];
 $city = $_POST['city'];
 $zip = $_POST['zip'];
 $mobile = $_POST['mobile'];
@@ -29,19 +29,37 @@ $option2 = $_POST['option2'];
 $option3 = $_POST['option3'];
 
 if(trim($name) == '') {
-	echo '<div class="error_message">Attention! You must enter your name.</div>';
+	echo '<div class="alert alert-warning error_message">Attention! You must enter your name.</div>';
+	exit();
+} else if(trim($company) == '') {
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a company.</div>';
+	exit();
+} else if(trim($your_address) == '') {
+	echo '<div class="alert alert-warning error_message">Attention! Please enter an address.</div>';
+	exit();
+} else if(trim($city) == '') {
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a city.</div>';
+	exit();
+} else if(trim($zip) == '') {
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a zip code.</div>';
 	exit();
 } else if(trim($mobile) == '') {
-	echo '<div class="error_message">Attention! Please enter a valid mobile number.</div>';
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid mobile number.</div>';
 	exit();
 } else if(!is_numeric($mobile)) {
-	echo '<div class="error_message">Attention! Phone number can only contain digits.</div>';
+	echo '<div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div>';
+	exit();
+} else if(trim($landline) == '') {
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid landline number.</div>';
+	exit();
+} else if(!is_numeric($landline)) {
+	echo '<div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
+	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid email address.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="alert alert-warning error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
 	exit();
 }
 
@@ -85,17 +103,17 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
 $e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$name\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$company\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$address\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$city\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$zip\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$mobile\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$landline\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$email\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$option1\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$option2\" \n" . PHP_EOL . PHP_EOL;
-$e_content = "\"$option3\" \n" . PHP_EOL . PHP_EOL;
+$e_content = "\"$name\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$company\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$your_address\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$city\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$zip\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$mobile\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$landline\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$email\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$option1\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$option2\"" . PHP_EOL . PHP_EOL;
+$e_content .= "\"$option3\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email, $email or via phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
@@ -119,6 +137,6 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 } else {
 
-	echo 'Oops!  Something went wrong.  Try emailing us directly at <a href="mailto:hello@globacom.com">hello@globacom.com</a> instead.';
+	echo '<div class="alert alert-danger">Oops!  Something went wrong.  Try emailing us directly at <a href="mailto:hello@globacom.com">hello@globacom.com</a> instead.</div>';
 
 }

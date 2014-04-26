@@ -14,12 +14,16 @@ Title: Request Info
 		<div class="row">
 			<div class="col-xs-12">
 				<p class="lead">Your interest says that, just like us, you believe that privacy matters. It also says that you like the new, modern way of safe communications.</p>
-				<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p>
+				<!-- <p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p> -->
 			</div>
 		</div>
 		<div id="contact">
 			<div class="row">
 				<form role="form" method="post" action="contact-form/contact.php" name="contactform" id="contactform">
+					<div class="col-xs-12">
+						<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p>
+						<br>
+					</div>
 					<div class="col-sm-6">
 						<div class="form-group">
 							<label for="name">Full name</label>
@@ -64,17 +68,17 @@ Title: Request Info
 						<br class="hidden-xs">
 						<label for="interested">Interested in (Check all that apply):</label>
 						<div class="checkbox">
-							<input type="checkbox" id="option1" />
+							<input type="checkbox" value="ProShield-Single-Line / SIP account" id="option1" unchecked/>
 							<label for="option1"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Single-Line / SIP account</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" id="option2" />
+							<input type="checkbox" value="ProShield-Multi-Line / VirtualPBX" id="option2" />
 							<label for="option2"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Multi-Line / VirtualPBX</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" id="option3" />
+							<input type="checkbox" value="ExecutiveShield Multi-Line / VirtualPBX" id="option3" />
 							<label for="option3"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
 						</div>
@@ -90,7 +94,7 @@ Title: Request Info
 					</div>
 				</form>
 				<div class="col-md-6 col-md-offset-6">
-					<div class="alert alert-danger" id="message"></div>
+					<div id="message"></div>
 				</div>
 			</div>
 		</div><!-- END: #contact -->

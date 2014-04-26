@@ -88,7 +88,7 @@ apache:
             ssl_chain: ''
             ssl_certs_dir: ''
     mod_pagespeed: 0
-    mod_spdy: '1'
+    mod_spdy: 0
 nginx:
     install: 0
     vhosts:

@@ -13,8 +13,16 @@ jQuery(document).ready(function(){
 
 		$.post(action, {
 			name: $('#name').val(),
+			company: $('#company').val(),
+			address: $('#address').val(),
+			city: $('#city').val(),
+			zip: $('#zip').val(),
 			mobile: $('#mobile').val(),
-			email: $('#email').val()
+			landline: $('#landline').val(),
+			email: $('#email').val(),
+			option1: $('#option1').val(),
+			option2: $('#option2').val(),
+			option3: $('#option3').val()
 			// subject: $('#subject').val(),
 			// comments: $('#comments').val(),
 			// verify: $('#verify').val()
