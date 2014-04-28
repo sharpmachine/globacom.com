@@ -54,6 +54,13 @@ h6,
   .oxygen-bold
 }
 
+a {
+  &:active,
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
 // horizontal rule
 hr {
   margin-top: 20px;
@@ -307,7 +314,7 @@ p.dropcap {
 
   .triangle {
     position: relative;
-    top: 42px;
+    top: 43px;
     right: 5px;
     width: 0px;
     height: 0px;
@@ -579,11 +586,18 @@ input[type=checkbox]:checked + label:before {
   & > li {
     &.active {
       a,
-      a:hover {
+      a:hover,
+      a:focus {
         color: white;
         background-color: @brand-blue-light;
         border: 0;
       }
+
+      // a:focus {
+      //   color: white;
+      //   background-color: @brand-blue-light;
+      //   border: 0;
+      // }
     }
     & > a {
       color: @brand-blue-light;
@@ -648,7 +662,8 @@ input[type=checkbox]:checked + label:before {
   & > li {
     &.active {
       a,
-      a:hover {
+      a:hover,
+      a:focus {
         color: @brand-blue-light;
         background-color: white;
       }
