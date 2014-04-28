@@ -3,7 +3,7 @@ Title: About Globacom
 Description: We are excited to provide the safest phone connections worldwide, with the core values of innovation, integrity, and expertise
 */
 
-<div class="page-header text-center">
+<div class="page-header about-page-header text-center">
 	<div class="container">
 		<h1>Globacom is a 100% Swiss company based in Zug, Switzerland.</h1>
 	</div>

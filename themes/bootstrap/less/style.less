@@ -331,6 +331,12 @@ footer {
 }
 
 /*..................................the request info page */
+// Page header
+.request-info-page-header {
+  background: @brand-blue-dark url(../img/sky-blue-header.jpg) bottom right no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 .request-info {
   form {
     margin: 30px 0;
@@ -380,6 +386,12 @@ footer {
 }
 
 /*..................................the about page */
+.about-page-header {
+  background: @brand-blue-dark url(../img/mountain-peak.jpg) bottom center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .purpose {
   blockquote {
     margin-bottom: 0;
@@ -422,6 +434,13 @@ footer {
 }
 
 /*..................................the product pages */
+// Page header
+.product-page-header {
+  background: @brand-blue-dark url(../img/matterhorn.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 // Overview section
 .product-overview {
   #accordion,
@@ -435,12 +454,21 @@ footer {
 }
 
 // Benefits
-.product-benefits {
-  .table {
-    margin-top: 35px;
+.comparison-chart {
+  padding-top: 30px;
 
+  @media (max-width: @screen-xs-max) {
+    padding-top: 0;
+  }
+
+  h4 {
+    margin-top: 0;
+    color: @brand-blue-dark;
+  }
+
+  .table {
     @media (max-width: @screen-xs-max) {
-      margin: 0 0 60px;
+      margin-bottom: 60px;
     }
 
     & > thead {
@@ -450,16 +478,24 @@ footer {
         }
       }
     }
-  }
 
-  &.tabs-inverse {
-    .table {
-      margin-top: 75px;
-
-      @media (max-width: @screen-xs-max) {
-        margin: 0 0 60px;
+    & > tbody {
+      & > tr {
+        & > td {
+          small {
+            font-size: 11px;
+          }
+        }
       }
     }
+  }
+}
+
+&.tabs-inverse .comparison-chart {
+  padding-top: 75px;
+
+  @media (max-width: @screen-xs-max) {
+    padding-top: 0;
   }
 }
 

@@ -3,7 +3,7 @@ Title: ProShield Multi-Line
 Description: Virtual PBX services for your business with 2 levels of security to choose from.
 */
 
-<div class="page-header">
+<div class="page-header product-page-header">
 	<div class="container">
 		<h1 class="text-center">“We believe in building safe, valuable phone connections around the world.”</h1>	
 	</div>
@@ -305,7 +305,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div class="tab-pane active" id="basic-overview">
-						<h4>Basic Security 
+						<h4>Basic Security&nbsp;
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<br><span>(TLS/SIPS & SRTP)</span>
 						</h4>
@@ -318,8 +318,8 @@ Description: Virtual PBX services for your business with 2 levels of security to
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4">
-				<h4>Comparison</h4>
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				<h4>Basic vs. High Comparison:</h4>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -349,7 +349,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/1level_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/1level_of_security@2x.png" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>
@@ -365,7 +365,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 				<!-- Tab panes -->
 				<div class="tab-content tab-content-inverse">
 					<div class="tab-pane active" id="high-overview">
-						<h4>High Security 
+						<h4>High Security&nbsp;
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<br><span>(TLS/SIPS,SRTP & VPN)</span>
@@ -378,7 +378,8 @@ Description: Virtual PBX services for your business with 2 levels of security to
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				<h4>Basic vs. High Comparison:</h4>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -408,7 +409,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/2levels_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/2levels_of_security@2x.png" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>

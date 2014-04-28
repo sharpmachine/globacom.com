@@ -2,7 +2,7 @@
 Title: Request Info
 */
 
-<div class="page-header text-center">
+<div class="page-header request-info-page-header text-center">
 	<div class="container">
 		<h1>Thank you for your interest in our services</h1>
 		<p class="lead hidden">Your interest says that, just like us, you believe that privacy matters. It also says that you like the new, modern way of safe communications.</p>

@@ -3,7 +3,7 @@ Title: ExecutiveShield
 Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of international intelligence gathering.
 */
 
-<div class="page-header">
+<div class="page-header product-page-header">
 	<div class="container">
 		<h1 class="text-center">The highest level of telecommunications security in existence</h1>	
 	</div>
@@ -291,7 +291,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 </section>
 
 <div class="container">
-	<h3>The Ultimate Level of Security 
+	<h3>The Ultimate Level of Security&nbsp;
 		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 		<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
@@ -322,7 +322,8 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				<h4>Security Features:</h4>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -348,7 +349,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/3levels_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/3levels_of_security@2x.png" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>

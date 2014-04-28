@@ -3,7 +3,7 @@ Title: ProShield Single-Line
 Description: Phone line/SIP account services for your business, with 2 levels of security to choose from.
 */
 
-<div class="page-header">
+<div class="page-header product-page-header">
 	<div class="container">
 		<h1 class="text-center">“We believe in building safe, valuable phone connections around the world.”</h1>	
 	</div>
@@ -35,7 +35,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 <section class="product-benefits tabs bg-blue-light">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-8">
+			<div class="col-sm-6 col-lg-8">
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#basic-overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
 					<li><a href="#basic-technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
@@ -43,7 +43,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div class="tab-pane active" id="basic-overview">
-						<h4>Basic Security 
+						<h4>Basic Security&nbsp;
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<br><span>(TLS/SIPS & SRTP)</span>
 						</h4>
@@ -56,7 +56,8 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				<h4>Basic vs. High Comparison:</h4>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -77,7 +78,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling</td>
+							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -86,7 +87,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/1level_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/1level_of_security@2x.png" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>
@@ -102,7 +103,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 				<!-- Tab panes -->
 				<div class="tab-content tab-content-inverse">
 					<div class="tab-pane active" id="high-overview">
-						<h4>High Security 
+						<h4>High Security&nbsp;
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
 							<br><span>(TLS/SIPS,SRTP & VPN)</span>
@@ -115,7 +116,8 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4">
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				<h4>Basic vs. High Comparison:</h4>
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
@@ -136,7 +138,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling</td>
+							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -145,7 +147,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 			</div>
 		</div>
 		<div class="col-xs-12 text-center">
-			<img src="themes/bootstrap/img/2levels_of_security@2x.png" class="img-responsive" width="604" height="208" alt="Security Infographic">
+			<img src="themes/bootstrap/img/2levels_of_security@2x.png" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
 		</div>
 	</div>
 </section>
