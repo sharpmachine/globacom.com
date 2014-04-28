@@ -29,37 +29,37 @@ $option2 = $_POST['option2'];
 $option3 = $_POST['option3'];
 
 if(trim($name) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! You must enter your name.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You must enter your name.</div></div></div>';
 	exit();
 } else if(trim($company) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a company.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a company.</div></div></div>';
 	exit();
 } else if(trim($your_address) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter an address.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter an address.</div></div></div>';
 	exit();
 } else if(trim($city) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a city.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a city.</div></div></div>';
 	exit();
 } else if(trim($zip) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a zip code.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a zip code.</div></div></div>';
 	exit();
 } else if(trim($mobile) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid mobile number.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid mobile number.</div></div></div>';
 	exit();
 } else if(!is_numeric($mobile)) {
-	echo '<div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div></div></div>';
 	exit();
 } else if(trim($landline) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid landline number.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid landline number.</div></div></div>';
 	exit();
 } else if(!is_numeric($landline)) {
-	echo '<div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div></div></div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="alert alert-warning error_message">Attention! Please enter a valid email address.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid email address.</div></div></div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="alert alert-warning error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You have enter an invalid e-mail address, try again.</div</div>></div>';
 	exit();
 }
 
@@ -114,7 +114,7 @@ $e_content .= "\"$email\"" . PHP_EOL . PHP_EOL;
 $e_content .= "\"$option1\"" . PHP_EOL . PHP_EOL;
 $e_content .= "\"$option2\"" . PHP_EOL . PHP_EOL;
 $e_content .= "\"$option3\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email or via phone";
+$e_reply = "You can contact $name via email, $email or via phone $mobile";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -128,15 +128,13 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
 
-	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h1>Email Sent Successfully.</h1>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<h2>Email Sent Successfully.</h2>";
+	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us. We'll be in touch within the next business day.</p>";
 	echo "</div>";
-	echo "</fieldset>";
 
 } else {
 
-	echo '<div class="alert alert-danger">Oops!  Something went wrong.  Try emailing us directly at <a href="mailto:hello@globacom.com">hello@globacom.com</a> instead.</div>';
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-danger">Oops!  Something went wrong.  Try emailing us directly at <a href="mailto:hello@globacom.com">hello@globacom.com</a> instead.</div></div></div>';
 
 }

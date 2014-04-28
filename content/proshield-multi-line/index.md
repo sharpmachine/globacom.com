@@ -340,7 +340,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling</td>
+							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -400,7 +400,7 @@ Description: Virtual PBX services for your business with 2 levels of security to
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling</td>
+							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>

@@ -5,7 +5,6 @@ Title: Request Info
 <div class="page-header request-info-page-header text-center">
 	<div class="container">
 		<h1>Thank you for your interest in our services</h1>
-		<p class="lead hidden">Your interest says that, just like us, you believe that privacy matters. It also says that you like the new, modern way of safe communications.</p>
 	</div>
 </div>
 
@@ -14,7 +13,6 @@ Title: Request Info
 		<div class="row">
 			<div class="col-xs-12">
 				<p class="lead">Your interest says that, just like us, you believe that privacy matters. It also says that you like the new, modern way of safe communications.</p>
-				<!-- <p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p> -->
 			</div>
 		</div>
 		<div id="contact">
@@ -93,7 +91,7 @@ Title: Request Info
 						<!-- <input type="submit" class="submit" id="submit" value="Submit" /> -->
 					</div>
 				</form>
-				<div class="col-md-6 col-md-offset-6">
+				<div class="col-xs-12">
 					<div id="message"></div>
 				</div>
 			</div>
