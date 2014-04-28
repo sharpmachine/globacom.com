@@ -20,7 +20,7 @@ Description: Your interest says that, just like us, you believe that privacy mat
 			<div class="row">
 				<form role="form" method="post" action="content/request-info/contact.php" name="contactform" id="contactform">
 					<div class="col-xs-12">
-						<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p>
+						<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.  <strong>Because we value your privacy we promise to never share your contact details with other companies.</strong></p>
 						<br>
 					</div>
 					<div class="col-sm-6">
@@ -67,24 +67,20 @@ Description: Your interest says that, just like us, you believe that privacy mat
 						<br class="hidden-xs">
 						<label for="interested">Interested in (Check all that apply):</label>
 						<div class="checkbox">
-							<input type="checkbox" value="ProShield-Single-Line / SIP account" id="option1" unchecked/>
+							<input type="checkbox" value="" id="option1" />
 							<label for="option1"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Single-Line / SIP account</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" value="ProShield-Multi-Line / VirtualPBX" id="option2" />
+							<input type="checkbox" value="" id="option2" />
 							<label for="option2"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Multi-Line / VirtualPBX</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" value="ExecutiveShield Multi-Line / VirtualPBX" id="option3" />
+							<input type="checkbox" value="" id="option3" />
 							<label for="option3"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
 						</div>
-						<a href="request-info" class="btn btn-lg btn-default btn-with-icon hidden">
-							<div class="btn-label">Cancel</div>
-							<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
-						</a>
 						<button type="submit" class="btn btn-lg btn-primary btn-with-icon" id="submit">
 							<div class="btn-label">Submit</div>
 							<div class="btn-icon"><span class="icon icon-hand-touch-3"></span></div>

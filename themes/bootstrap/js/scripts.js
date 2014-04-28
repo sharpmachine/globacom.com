@@ -6,3 +6,28 @@ $(document).ready(function() {
   });
   return false
 });
+
+
+$(document).ready(function() {
+  $('input#option1').change(function(){
+    if ($(this).is(':checked')) {
+      $(this).attr('value', 'ProShield-Single-Line / SIP account');
+    } else if ($(this).not(':checked')) {
+      $(this).attr('value', '');
+    }
+  });
+  $('input#option2').change(function(){
+    if ($(this).is(':checked')) {
+      $(this).attr('value', 'ProShield-Multi-Line / VirtualPBX');
+    } else if ($(this).not(':checked')) {
+      $(this).attr('value', '');
+    }
+  });
+  $('input#option3').change(function(){
+    if ($(this).is(':checked')) {
+      $(this).attr('value', 'ExecutiveShield Multi-Line / VirtualPBX');
+    } else if ($(this).not(':checked')) {
+      $(this).attr('value', '');
+    }
+  });
+});

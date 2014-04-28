@@ -61,6 +61,15 @@ if(trim($name) == '') {
 } else if(!isEmail($email)) {
 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You have enter an invalid e-mail address, try again.</div</div>></div>';
 	exit();
+// } else if(trim($option1) == '') {
+// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
+// 	exit();
+// 	} else if(trim($option2) == '') {
+// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
+// 	exit();
+// 	} else if(trim($option3) == '') {
+// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
+// 	exit();
 }
 
 // if(trim($subject) == '') {
@@ -87,7 +96,7 @@ if(trim($name) == '') {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "jesse@sharpmachinemedia.com";
+$address = "hello@globacom.com";
 
 
 // Configuration option.
@@ -95,7 +104,7 @@ $address = "jesse@sharpmachinemedia.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . '.';
+$e_subject = 'You\'ve been contacted by ' . $name . ' from ' . $company . '.';
 
 
 // Configuration option.
@@ -103,18 +112,14 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
 $e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$name\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$company\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$your_address\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$city\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$zip\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$mobile\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$landline\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$email\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$option1\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$option2\"" . PHP_EOL . PHP_EOL;
-$e_content .= "\"$option3\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email or via phone $mobile";
+$e_content = "Full Name: $name" . PHP_EOL . PHP_EOL;
+$e_content .= "Company: $company" . PHP_EOL . PHP_EOL;
+$e_content .= "Address: $your_address \n$city $zip" . PHP_EOL . PHP_EOL;
+$e_content .= "Moble: $mobile" . PHP_EOL . PHP_EOL;
+$e_content .= "Landline: $landline" . PHP_EOL . PHP_EOL;
+$e_content .= "Email: $email" . PHP_EOL . PHP_EOL;
+$e_content .= "Interested in: \n$option1 \n$option2 \n$option3" . PHP_EOL . PHP_EOL;
+$e_reply = "You can contact $name via email at $email or via phone at $mobile";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
