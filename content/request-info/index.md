@@ -1,5 +1,6 @@
 /*
 Title: Request Info
+Description: Your interest says that, just like us, you believe that privacy matters.
 */
 
 <div class="page-header request-info-page-header text-center">
@@ -88,7 +89,6 @@ Title: Request Info
 							<div class="btn-label">Submit</div>
 							<div class="btn-icon"><span class="icon icon-hand-touch-3"></span></div>
 						</button>
-						<!-- <input type="submit" class="submit" id="submit" value="Submit" /> -->
 					</div>
 				</form>
 				<div class="col-xs-12">
@@ -98,37 +98,3 @@ Title: Request Info
 		</div><!-- END: #contact -->
 	</div>
 </section><!-- END: .request-info -->
-
-
-<!-- <div id="contact">
-	<h1><abbr title="Asynchronous Javascript and XML">AJAX</abbr> Contact Form</h1>
-	<p>With just 2 files this can be easily integrated into any <b>HTML</b> or <b>PHP</b> page!</p>
-	<div id="message"></div>
-	<form method="post" action="contact-form/contact.php" name="contactform" id="contactform">
-		<fieldset>
-			<legend>Please fill in the following form to contact us</legend>
-			<label for="name" accesskey="U"><span class="required">*</span> Your Name</label>
-			<input name="name" type="text" id="name" size="30" value="" />
-			<br />
-			<label for="email" accesskey="E"><span class="required">*</span> Email</label>
-			<input name="email" type="text" id="email" size="30" value="" />
-			<br />
-			<label for="phone" accesskey="P"><span class="required">*</span> Phone</label>
-			<input name="phone" type="text" id="phone" size="30" value="" />
-			<br />
-			<label for="subject" accesskey="S">Subject</label>
-			<select name="subject" id="subject">
-				<option value="Support">Support</option>
-				<option value="a Sale">Sales</option>
-				<option value="a Bug fix">Report a bug</option>
-			</select>
-			<br />
-			<label for="comments" accesskey="C"><span class="required">*</span> Your comments</label>
-			<textarea name="comments" cols="40" rows="3" id="comments" style="width: 350px;"></textarea>
-			<p><span class="required">*</span> Are you human?</p>
-			<label for="verify" accesskey="V">&nbsp;&nbsp;&nbsp;3 + 1 =</label>
-			<input name="verify" type="text" id="verify" size="4" value="" style="width: 30px;" /><br /><br />
-			<input type="submit" class="submit" id="submit" value="Submit" />
-		</fieldset>
-	</form>
-</div> -->

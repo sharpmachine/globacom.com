@@ -45,7 +45,7 @@ header {
   }
 }
 
-/*..................................the sections */
+/*..................................the home page */
 section,
 footer {
   padding-top: 45px;
@@ -102,10 +102,6 @@ section.one {
         padding-left: 2px;
       }
     }
-
-    @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-      // .pull-right();
-    }
   }
 
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
@@ -120,8 +116,6 @@ section.one {
   background: center center no-repeat;
 
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
-    // padding: 46px 12px;
-    // padding: 79px 12px;
     margin-top: 30px;
   }
 }
@@ -130,7 +124,6 @@ section.one {
   .img-retina("../img/tower.png", "../img/tower@2x.png", 122px, 285px);
 
   @media (min-width: @screen-md) and (max-width: @screen-md-max) {
-    // margin-top: -18px;
     padding: 79px 12px;
   }
 }
@@ -251,6 +244,7 @@ footer {
   }
 }
 
+// social media
 .social-media {
   height: 53px;
 
@@ -383,6 +377,11 @@ footer {
   @media (min-width: @screen-lg) {
     margin-bottom: 26px;
   }
+}
+
+#message {
+  margin-top: 20px;
+  display: none;
 }
 
 /*..................................the about page */
