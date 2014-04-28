@@ -44,8 +44,7 @@ module.exports = function(grunt) {
               'themes/bootstrap/js/button.js',
               'themes/bootstrap/js/collapse.js',
               'themes/bootstrap/js/dropdown.js',
-              'themes/bootstrap/js/onePageNavi.js',
-              'themes/bootstrap/js/scrollTo.js'
+              'themes/bootstrap/js/vendor/ajax-form.js'
               ],
               'themes/bootstrap/js/scripts.min.js': [
               'themes/bootstrap/js/scripts.js'

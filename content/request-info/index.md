@@ -17,7 +17,7 @@ Title: Request Info
 		</div>
 		<div id="contact">
 			<div class="row">
-				<form role="form" method="post" action="contact-form/contact.php" name="contactform" id="contactform">
+				<form role="form" method="post" action="content/request-info/contact.php" name="contactform" id="contactform">
 					<div class="col-xs-12">
 						<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.</p>
 						<br>
