@@ -78,7 +78,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
+							<td>Call Audio Scrambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>
@@ -138,7 +138,7 @@ Description: Phone line/SIP account services for your business, with 2 levels of
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
+							<td>Call Audio Scrambling <br> <small>(Only available with <a href="executiveshield">ExecutiveShield</a>)</small></td>
 							<td></td>
 							<td></td>
 						</tr>

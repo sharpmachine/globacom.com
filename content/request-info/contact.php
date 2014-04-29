@@ -9,18 +9,12 @@ function isEmail($email) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
-// $name     = $_POST['name'];
-// $email    = $_POST['email'];
-// $phone   = $_POST['phone'];
-// $subject  = $_POST['subject'];
-// $comments = $_POST['comments'];
-// $verify   = $_POST['verify'];
-
 $name = $_POST['name'];
 $company = $_POST['company'];
 $your_address = $_POST['address'];
 $city = $_POST['city'];
 $zip = $_POST['zip'];
+$country = $_POST['country'];
 $mobile = $_POST['mobile'];
 $landline = $_POST['landline'];
 $email = $_POST['email'];
@@ -31,29 +25,8 @@ $option3 = $_POST['option3'];
 if(trim($name) == '') {
 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You must enter your name.</div></div></div>';
 	exit();
-} else if(trim($company) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a company.</div></div></div>';
-	exit();
-} else if(trim($your_address) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter an address.</div></div></div>';
-	exit();
-} else if(trim($city) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a city.</div></div></div>';
-	exit();
-} else if(trim($zip) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a zip code.</div></div></div>';
-	exit();
-} else if(trim($mobile) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid mobile number.</div></div></div>';
-	exit();
-} else if(!is_numeric($mobile)) {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div></div></div>';
-	exit();
-} else if(trim($landline) == '') {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid landline number.</div></div></div>';
-	exit();
-} else if(!is_numeric($landline)) {
-	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Phone number can only contain digits.</div></div></div>';
+} else if(trim($country) == '') {
+	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a country.</div></div></div>';
 	exit();
 } else if(trim($email) == '') {
 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please enter a valid email address.</div></div></div>';
@@ -61,15 +34,6 @@ if(trim($name) == '') {
 } else if(!isEmail($email)) {
 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You have enter an invalid e-mail address, try again.</div</div>></div>';
 	exit();
-// } else if(trim($option1) == '') {
-// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
-// 	exit();
-// 	} else if(trim($option2) == '') {
-// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
-// 	exit();
-// 	} else if(trim($option3) == '') {
-// 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! Please select a valid option.</div></div></div>';
-// 	exit();
 }
 
 // if(trim($subject) == '') {
@@ -104,7 +68,7 @@ $address = "hello@globacom.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . ' from ' . $company . '.';
+$e_subject = 'You\'ve been contacted by ' . $name . '.';
 
 
 // Configuration option.
@@ -114,12 +78,12 @@ $e_subject = 'You\'ve been contacted by ' . $name . ' from ' . $company . '.';
 $e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
 $e_content = "Full Name: $name" . PHP_EOL . PHP_EOL;
 $e_content .= "Company: $company" . PHP_EOL . PHP_EOL;
-$e_content .= "Address: $your_address \n$city $zip" . PHP_EOL . PHP_EOL;
+$e_content .= "Address: $your_address \n$city $zip $country" . PHP_EOL . PHP_EOL;
 $e_content .= "Moble: $mobile" . PHP_EOL . PHP_EOL;
 $e_content .= "Landline: $landline" . PHP_EOL . PHP_EOL;
 $e_content .= "Email: $email" . PHP_EOL . PHP_EOL;
 $e_content .= "Interested in: \n$option1 \n$option2 \n$option3" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email at $email or via phone at $mobile";
+$e_reply = "You can contact $name via email at $email.";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 

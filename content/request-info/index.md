@@ -25,7 +25,7 @@ Description: Your interest says that, just like us, you believe that privacy mat
 					</div>
 					<div class="col-sm-6">
 						<div class="form-group">
-							<label for="name">Full name</label>
+							<label for="name">Full name <span class="text-danger">*</span></label>
 							<input type="text" class="form-control" id="name">
 						</div>
 						<div class="form-group">
@@ -45,6 +45,10 @@ Description: Your interest says that, just like us, you believe that privacy mat
 							<input type="text" class="form-control" id="zip">
 						</div>
 						<div class="form-group">
+							<label for="country">Country <span class="text-danger">*</span></label>
+							<input type="text" class="form-control" id="country">
+						</div>
+						<div class="form-group">
 							<label for="mobile">Mobile Phone</label>
 							<input type="text" class="form-control" id="mobile">
 						</div>
@@ -53,7 +57,7 @@ Description: Your interest says that, just like us, you believe that privacy mat
 							<input type="text" class="form-control" id="landline">
 						</div>
 						<div class="form-group">
-							<label for="email">Email</label>
+							<label for="email">Email <span class="text-danger">*</span></label>
 							<input type="email" class="form-control" id="email">
 						</div>
 					</div>
@@ -67,17 +71,17 @@ Description: Your interest says that, just like us, you believe that privacy mat
 						<br class="hidden-xs">
 						<label for="interested">Interested in (Check all that apply):</label>
 						<div class="checkbox">
-							<input type="checkbox" value="" id="option1" />
+							<input type="checkbox" value="" id="option1" data-value="ProShield-Single-Line / SIP account" />
 							<label for="option1"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Single-Line / SIP account</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" value="" id="option2" />
+							<input type="checkbox" value="" id="option2" data-value="ProShield-Multi-Line / VirtualPBX" />
 							<label for="option2"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ProShield-Multi-Line / VirtualPBX</div>
 						</div>
 						<div class="checkbox">
-							<input type="checkbox" value="" id="option3" />
+							<input type="checkbox" value="" id="option3" data-value="ExecutiveShield Multi-Line / VirtualPBX" />
 							<label for="option3"><span class="sr-only">Checkbox</span></label>
 							<div class="checkbox-label">ExecutiveShield Multi-Line / VirtualPBX</div>
 						</div>

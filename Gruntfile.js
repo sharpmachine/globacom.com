@@ -29,7 +29,8 @@ module.exports = function(grunt) {
           },
           all: [
           'Gruntfile.js',
-          'themes/bootstrap/js/*.js'
+          'themes/bootstrap/js/*.js',
+          'themes/bootstrap/js/vendor/*.js'
           ]
         },
 
@@ -68,6 +69,9 @@ module.exports = function(grunt) {
 
         // watch our project for changes
         watch: {
+          grunt: {
+            files: ['Gruntfile.js']
+          },
           less: {
             files: ["themes/bootstrap/less/*"],
             tasks: ["less"],
@@ -77,7 +81,8 @@ module.exports = function(grunt) {
           },
           js: {
             files: [
-            'themes/bootstrap/js/scripts.js'
+            'themes/bootstrap/js/scripts.js',
+            'themes/bootstrap/js/vendor/*.js'
             ],
             tasks: ['uglify']
           },
@@ -88,11 +93,12 @@ module.exports = function(grunt) {
             files: [
             'themes/bootstrap/css/*.css',
             'themes/bootstrap/js/scripts.min.js',
+            'themes/bootstrap/js/vendor/*.js',
             'themes/bootstrap/index.html',
             'content/*.md',
             'content/*/*.md',
             'content/*/*/*.md',
-            'content/*.html',
+            'content/*.html'
             ],
             options: {
               livereload: true

@@ -341,7 +341,7 @@ Description: Virtual PBX & Phone line/SIP Accounts exceeding all levels of inter
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 						<tr>
-							<td>Call Audio Scambling</td>
+							<td>Call Audio Scrambling</td>
 							<td class="text-center"><img src="themes/bootstrap/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
 						</tr>
 					</tbody>
