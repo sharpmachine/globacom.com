@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Brand Colors
+$brand-blue-light:      #52BEF0;
+$brand-blue-dark:       #262F62;
+$brand-black:           #3A3A3A;
+$brand-gray:            #D3D3D3;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import 
+	"bootstrap",
+	"theme",
+	"style"
+;
