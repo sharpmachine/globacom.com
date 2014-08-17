@@ -18,7 +18,7 @@ Description: “We believe in building safe, valuable phone connections around t
 
 <section class="one" id="we-provide">
 	<div class="container">
-		<h2>We Provide</h2>
+		<h2>We Provide GlobaVoIP</h2>
 		<div class="row consumer proshield-single">
 			<div class="col-sm-2 col-md-2 big-number">
 				1
@@ -109,6 +109,104 @@ Description: “We believe in building safe, valuable phone connections around t
 			</div>
 			<div class="col-sm-12 col-md-3 text-center belief">
 				“Because your connections are crucial”
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="one one-point-two">
+	<div class="container">
+		<h2>We Provide GlobaVideo</h2>
+		<div class="row consumer proshield-single">
+			<div class="col-sm-2 col-md-2 big-number">
+				4
+			</div>
+			<div class="col-sm-10 col-md-4">
+				<h3>Safe Video Conferencing<span class="tm">&trade;</span></h3>
+				<p class="lead"><strong>Virtual Conference Room</strong> services for your business with 2 levels of security to choose from. <span><small><em>Best for consumer companies, governments, financial and security organizations.</em></small></span></p>
+				<p class="more-please">
+					<a href="coming-soon" class="btn btn-info">Learn More <span class="icon icon-arrow-68"></span></a>
+				</p>
+			</div>
+			<div class="col-sm-12 col-md-3 levels levels-consumer">
+				<div class="level">
+					<span>Ultimate</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+				<div class="level">
+					<span>High</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3 text-center belief">
+				“Because your collaboration is critical”
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="one">
+	<div class="container">
+		<h2>We Provide GlobaTracker</h2>
+		<div class="row consumer proshield-single">
+			<div class="col-sm-2 col-md-2 big-number">
+				5
+			</div>
+			<div class="col-sm-10 col-md-4">
+				<h3>Safe GPS Tracker<span class="tm">&trade;</span></h3>
+				<p class="lead"><strong>Real-Time Tracking</strong> <br>services to keep your people safe. <span><small><em>Best for consumer companies, governments, financial and security organizations.</em></small></span></p>
+				<p class="more-please">
+					<a href="coming-soon" class="btn btn-info">Learn More <span class="icon icon-arrow-68"></span></a>
+				</p>
+			</div>
+			<div class="col-sm-12 col-md-3 levels levels-consumer levels-single">
+				<div class="level">
+					<span>Basic</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3 text-center belief">
+				“Because your people are important”
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="one one-point-two">
+	<div class="container">
+		<h2>We Provide GlobaCloud</h2>
+		<div class="row consumer proshield-single">
+			<div class="col-sm-2 col-md-2 big-number">
+				6
+			</div>
+			<div class="col-sm-10 col-md-4">
+				<h3>Safe Cloud Vault<span class="tm">&trade;</span></h3>
+				<p class="lead"><strong>Encrypted Data Storage</strong> services to keep your data safe. <span><small><em>Best for all.</em></small></span></p>
+				<p class="more-please">
+					<a href="coming-soon" class="btn btn-info">Learn More <span class="icon icon-arrow-68"></span></a>
+				</p>
+			</div>
+			<div class="col-sm-12 col-md-3 levels levels-consumer levels-single">
+				<div class="level">
+					<span>High</span>
+					<div class="rating pull-right">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+						<img src="themes/bootstrap/img/shield-blue.png" width="19" height="22" alt="Shield">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3 text-center belief">
+				“Because your information is indespensible”
 			</div>
 		</div>
 	</div>
