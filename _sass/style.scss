@@ -536,6 +536,15 @@ footer {
 .all-products-bar {
   padding: 30px 0;
   background-color: lighten($gray-light, 20%);
+
+  h3 {
+    margin: 0
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 2;
+  }
 }
 
 .all-products-content {

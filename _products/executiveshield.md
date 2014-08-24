@@ -1,11 +1,11 @@
 ---
 layout: product
-title:  ProShield Multi-Line
-permalink: /proshield-multi-line/
+title:  ExecutiveShield
+permalink: /executiveshield/
 
-intro: "We believe in building safe, valuable phone connections around the world."
-description: "Virtual PBX services for your business with 2 levels of security to choose from."
-best_for: "Best for consumer companies and resellers with many phone lines."
+intro: "The highest level of telecommunications security in existence"
+description: "Virtual PBX & Phone line/SIP Accounts exceeding all levels of international intelligence gathering."
+best_for: "Best for governments, financial and security organizations."
 
 expanded_features: true
 features:
@@ -136,26 +136,24 @@ features:
       - Call Detail Records (CDR) Reporting
       - PBX usage statistics
 
-security_heading: "2 Levels of Security to Choose from:"
+security_heading: |
+  The Ultimate Level of Security
+  <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+  <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+  <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+  <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
 security:
 # Levels of choice: Basic, High, Ultimate
-  - level: Basic
+  - level: Ultimate
     css_class: tabs bg-blue-light
-    alias: "(TLS/SIPS & SRTP)"
-    description: "With ProShield Multi-Line Basic, your phone line is secure with a Basic encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform."
+    alias: "(TLS/SIPS, SRTP, VPN & Encryption)"
+    description: "With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world. You can feel safe, knowing that no one else is listening, not even government intelligence agencies."
     technical_details: |
-      <p>ProShield Multi-Line Basic supports both encrypted signaling known as SIPS which can be SSL or TLS with signed certificates. ProShield Multi-Line Basic also supports encrypted audio/media known as SRTP. Typical convention is to have the unencrypted SIP control channel on UDP port 5060 (although the standards also allow for using TCP port 5060 as well), and an SSL encrypted or TLS encrypted SIP control channel known as SIPS on TCP port 5061.</p>
+      <p>ExecutiveShield Ultimate supports both encrypted signaling known as SIPS which can be SSL or TLS with signed certificates. ExecutiveShield Ultimate also supports encrypted audio/media known as SRTP. Typical convention is to have the unencrypted SIP control channel on UDP port 5060 (although the standards also allow for using TCP port 5060 as well), and an SSL encrypted or TLS encrypted SIP control channel known as SIPS on TCP port 5061.</p>
       <p>SRTP is ideal for protecting Voice over IP traffic because it can be used in conjunction with header compression and has no effect on IP Quality of Service. This provides significant advantages, especially for voice traffic using low-bitrate voice codecs.</p>
-    infographic: "1level_of_security@2x.png"
-    table: high-vs-basic
-
-  - level: High
-    css_class: tabs-inverse
-    alias: "(TLS/SIPS, SRTP & VPN)"
-    description: "With ProShield Multi-Line High, your phone line is more secure with the same Basic encryption, plus VPN from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform, providing a higher level of security."
-    technical_details: |
-      <p>ProShield Multi-Line High combines ProShield Single Line Basic, plus voice over IP (VoIP / Voice over Internet Protocol) and virtual private network technologies to offer a method for delivering secure voice. Because VoIP transmits digitized voice as a stream of data, the VoIP (Voice over Internet Protocol) VPN solution accomplishes voice encryption quite simply, applying standard data-encryption mechanisms. With ProShield Multi-Line High you have a VPN tunnel to our Datacenter in Switzerland. All calls can be tunneled both sides. Inside of the tunnel you have encrypted Voice and Signaling (TLS/SIP/SRTP).</p>
-    infographic: "2levels_of_security@2x.png"
-    table: high-vs-basic
+      <p>ExecutiveShield Ultimate also has voice over IP (VoIP / Voice over Internet Protocol) and virtual private network technologies to offer a method for delivering secure voice. Because VoIP transmits digitized voice as a stream of data, the VoIP (Voice over Internet Protocol) VPN solution accomplishes voice encryption quite simply, applying standard data-encryption mechanisms. With ExecutiveShield Ultimate you have a VPN tunnel to our Datacenter in Switzerland. All calls can be tunneled both sides. Inside of the tunnel you have encrypted Voice and Signaling (TLS/SIP/SRTP).</p>
+      <p>Combine TLS/SIPS, SRTP and VPN with our unique call audio scrambling technology, and you've got impossible-to-crack, government intelligence agency proof telecommunication security. We are proud to say that this is the highest level of telecommunications security in existence.</p>
+    infographic: "3levels_of_security@2x.png"
+    table: ultimate
 
 ---

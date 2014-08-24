@@ -1,0 +1,49 @@
+<div class="container">
+	<h3>{{ product.security_heading }}</h3>
+</div>
+
+{% for security in product.security %}
+<section class="product-benefits {{ security.css_class }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-lg-8">
+				<ul class="nav nav-tabs {% if security.css_class == 'tabs-inverse' %}nav-tabs-inverse{% endif %}">
+					<li class="active"><a href="#{{ security.level}}-overview" data-toggle="tab"><span class="icon icon-check-list"></span> Overview</a></li>
+					<li><a href="#{{ security.level}}-technical-details" data-toggle="tab"><span class="icon icon-chip"></span> Technical Details</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content {% if security.css_class == 'tabs-inverse' %}tab-content-inverse{% endif %}">
+					<div class="tab-pane active" id="{{ security.level}}-overview">
+						<h4>{{ security.level }} Security
+							{% if security.level == 'Basic' %}
+							 <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+							{% elsif security.level == 'High' %}
+							 <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+							<img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
+							{% elsif security.level == 'Ultimate' %}
+							: The highest level of telecommunications security in existence.
+							{% endif %}
+							<br><span>{{ security.alias }}</span>
+						</h4>
+						<p>{{ security.description }}</p>
+					</div>
+					<div class="tab-pane" id="{{ security.level }}-technical-details">
+						<h4>Technical Details</h4>
+						{{ security.technical_details }}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 comparison-chart">
+				{% if security.table == 'high-vs-basic' %}
+					{% include high-vs-basic-table.html %}
+				{% elsif security.table == 'ultimate' %}
+					{% include ultimate-table.html %}
+				{% endif %}
+			</div>
+		</div>
+		<div class="col-xs-12 text-center">
+			<img src="/assets/img/{{ security.infographic }}" class="img-responsive center-block" width="604" height="208" alt="Security Infographic">
+		</div>
+	</div>
+</section>
+{% endfor %}

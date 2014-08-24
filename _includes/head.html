@@ -5,14 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-	<link rel="shortcut icon" href="#/ico/favicon.ico">
+	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/ico/favicon.ico">
 
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="{{ "/assets/css/streamline.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="{{ site.baseurl }}/assets/javascripts/vendor/ie-columns.js"></script>
+  <![endif]-->
+
+  <script src="{{ site.baseurl }}/assets/javascripts/vendor/modernizr-2.6.1.min.js"></script>
 </head>
