@@ -2,13 +2,56 @@
 layout: default
 ---
 
+{% assign product = page %}
+
 <div class="page-header product-page-header">
 	<div class="container">
-		<h1 class="text-center">{{ page.intro }}</h1>	
+		<h1 class="text-center">{{ product.intro }}</h1>	
 	</div>
 </div>
 
-<!-- <section class="product-overview">
+{% if product.expanded_features == true %}
+<section class="product-overview">
+	<div class="container">
+		<h2>{{ product.title }}</h2>
+		<p class="lead">{{ product.description }}</p>
+		<p class="lead lead-italic">{{ product.best_for }}</p>
+		<h3>Product Features</h3>
+
+		<div class="panel-group" id="accordion">
+			{% for feature in product.features %}
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ feature.id }}">
+							{{ feature.parent }}
+							<span class="collapse-open pull-right"></span>
+							<div class="triangle pull-right"></div>
+						</a>
+					</h4>
+				</div>
+
+				<div id="collapse{{ feature.id }}" class="panel-collapse collapse {% if feature.id == 1 %}in{% endif %}">
+					<div class="panel-body">
+						<ul>
+							{% for item in feature.list %}
+							<li>{{ item }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</section>
+
+{% else %}
+
+<section class="product-overview">
 	<div class="container">
 		<h2>{{ page.title }}</h2>
 		<p class="lead">{{ page.description }}</p>
@@ -20,58 +63,9 @@ layout: default
 			{% endfor %}
 		</ul>
 	</div>
-</section> -->
-
-<section class="product-overview">
-	<div class="container">
-		<h2>{{ page.title }}</h2>
-		<p class="lead">{{ page.description }}</p>
-		<p class="lead lead-italic">{{ page.best_for }}</p>
-		<h3>Product Features</h3>
-
-		<div class="panel-group" id="accordion">
-			{% assign features = page.features %}
-			<!-- {% assign items = features.parent %} -->
-			{% for feature in features %}
-			<div class="panel panel-default">
-
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-							{{ feature.parent }}
-							<span class="collapse-open pull-right"></span>
-							<div class="triangle pull-right"></div>
-						</a>
-					</h4>
-				</div>
-
-				<div id="collapseOne" class="panel-collapse collapse in">
-					<div class="panel-body">
-						<ul>
-							<!-- {% assign items = feature.parent %} -->
-							<!-- {% for features_list in items.list %}
-							<li>{{ features_list }}</li>
-							{% endfor %} -->
-							{% assign features_list = page.features | map: 'parent' %}
-							<li>{{ features_list }}</li>
-							<li>Calling with Phone or Computer / CTI</li>
-							<li>Online Voicemailbox with E-mail Support</li>
-							<li>Pre- or Postpaid</li>
-							<li>Call rerouting</li>
-							<li>Parallel Signaling and Follow-me</li>
-							<li>Fax as PDF</li>
-							<li>Online Administration</li>
-							<li>Compatible with all SIP Phones and nearly all PBX Systems </li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-			{% endfor %}
-
-		</div>
-	</div>
 </section>
+
+{% endif %}
 
 <div class="container">
 	<h3>2 Levels of Security to Choose from:</h3>
