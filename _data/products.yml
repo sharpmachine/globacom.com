@@ -1,0 +1,32 @@
+- name: GlobaVoIP
+  products:
+    - name: Proshield Single-Line
+      tech_name: SIP account
+      permalink: proshield-single-line
+      id: 1
+    - name: Proshield Multi-Line
+      tech_name: VirtualPBX
+      permalink: proshield-multi-line
+      id: 2
+    - name: ExecutiveShield
+      tech_name: VirtualPBX
+      permalink: executiveshield
+      id: 3
+
+- name: GlobaVideo
+  products:
+    - name: Safe Video Conferencing
+      permalink: safe-video-conferencing
+      id: 4
+
+- name: GlobaTracker
+  products:
+    - name: Safe GPS Tracking
+      permalink: safe-gps-tracking
+      id: 5
+
+- name: GlobaCloud
+  products:
+    - name: Safe Cloud Vault
+      permalink: safe-cloud-vault
+      id: 6

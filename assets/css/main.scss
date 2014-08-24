@@ -9,6 +9,11 @@ $brand-blue-dark:       #262F62;
 $brand-black:           #3A3A3A;
 $brand-gray:            #D3D3D3;
 
+
+$text-color:            	$brand-black !default;
+$font-family-sans-serif:  "Oxygen", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Libre Baskerville", "Times New Roman", Times, serif;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 
 	"bootstrap",
