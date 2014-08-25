@@ -11,7 +11,7 @@ $(document).ready ->
   false
 
 $(document).ready ->
-  $("#option1, #option2, #option3").change ->
+  $("#option1, #option2, #option3, #option4, #option5, #option6").change ->
     $this = $(this)
     $this.attr "value", (if $this.is(":checked") then $this.attr("data-value") else "")
     return

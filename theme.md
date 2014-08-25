@@ -1,8 +1,8 @@
-/*
-Title: Theme
-Description: Theme's global CSS settings and component styling
-Author: Jesse Kade of Sharp Machine Media
-*/
+---
+layout: default
+title: Globacom CSS Style Guid
+permalink: /css/
+---
 
 <div class="container">
 	<h1>Theme</h1>
