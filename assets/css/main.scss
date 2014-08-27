@@ -25,6 +25,11 @@ $btn-default-bg:                 $brand-black !default;
 $btn-primary-bg:                 $brand-blue-light !default;
 $btn-info-bg:                    $brand-blue-dark !default;
 
+@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic");
+@import url("http://fonts.googleapis.com/css?family=Oxygen:400,300,700");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url("streamline.css");
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 
 	"bootstrap",

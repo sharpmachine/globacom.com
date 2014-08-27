@@ -28,7 +28,8 @@ security:
       <p>Our app is installed either on an iOS (Apple) or Android mobile devices.</p>
     technical_details: |
       <p>Our app is installed either on an iOS (Apple) or Android-based mobile device. The appis simple and the staff, the tracking on and off easily. The app can be found ready in the Apple Store or the Google Play Store to download. GlobaTrack also supports other tracking devices and various protocols. The actual tracking is done by our web server Trackig.</p>
-    infographic:
+    infographic: "globatracker_devices.svg"
+    infographic_width: "50%"
     table:
 
 ---
