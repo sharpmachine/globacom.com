@@ -1,5 +1,5 @@
 - name: GlobaVoIP
-  home_css_class: one 
+  home_css_class: bg-brand-blue-light 
   products:
     - name: Proshield Single-Line
       tech_name: Phone line/SIP Accounts
@@ -33,7 +33,7 @@
       id: 3
 
 - name: GlobaVideo
-  home_css_class: one one-point-two
+  home_css_class: bg-white
   products:
     - name: Safe Video Conferencing
       tech_name: "Virtual Conference Room"
@@ -47,7 +47,7 @@
       id: 4
 
 - name: GlobaTracker
-  home_css_class: one 
+  home_css_class: bg-brand-blue-light 
   products:
     - name: Safe GPS Tracking
       tech_name: "Real-Time Tracking"
@@ -61,7 +61,7 @@
       id: 5
 
 - name: GlobaCloud
-  home_css_class: one one-point-two
+  home_css_class: bg-white
   products:
     - name: Safe Cloud Vault
       tech_name: "Encrypted Data Storage"

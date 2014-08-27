@@ -2,21 +2,26 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 66.8 66.3" enable-background="new 0 0 66.8 66.3" xml:space="preserve">
+	 viewBox="0 0 66.8 66.7" enable-background="new 0 0 66.8 66.7" xml:space="preserve">
 <circle fill="#00ADEE" cx="33.7" cy="33.2" r="33.2"/>
-<radialGradient id="SVGID_1_" cx="19.4976" cy="17.75" r="7.3815" gradientUnits="userSpaceOnUse">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="44.2024" y1="20.2093" x2="29.6433" y2="8.4195">
+	<stop  offset="9.341501e-03" style="stop-color:#FFFFFF"/>
+	<stop  offset="9.762049e-02" style="stop-color:#DCF4FD"/>
+	<stop  offset="0.2795" style="stop-color:#9ADFF8"/>
+	<stop  offset="0.4527" style="stop-color:#63CDF5"/>
+	<stop  offset="0.6121" style="stop-color:#38BFF2"/>
+	<stop  offset="0.7549" style="stop-color:#19B5F0"/>
+	<stop  offset="0.876" style="stop-color:#07AFEE"/>
+	<stop  offset="0.9609" style="stop-color:#00ADEE"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M33.5,0.1C41.7,0,50.3,2.4,56.7,9.3L33.7,33.1l0-32.7"/>
+<radialGradient id="SVGID_2_" cx="19.4976" cy="17.75" r="7.3815" gradientUnits="userSpaceOnUse">
 	<stop  offset="0.4319" style="stop-color:#FFFFFF"/>
 	<stop  offset="1" style="stop-color:#00ADEE"/>
 </radialGradient>
-<circle fill="url(#SVGID_1_)" cx="19.5" cy="17.8" r="7.4"/>
+<circle fill="url(#SVGID_2_)" cx="19.5" cy="17.8" r="7.4"/>
 <circle fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" cx="33.7" cy="33.2" r="11.2"/>
-<line fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" x1="33.5" y1="-0.3" x2="33.5" y2="66.7"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" x1="33.7" y1="0" x2="33.5" y2="66.7"/>
 <line fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" x1="67" y1="33.2" x2="0" y2="33.2"/>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="46.0171" y1="20.858" x2="29.7725" y2="10.3667">
-	<stop  offset="9.341501e-03" style="stop-color:#FFFFFF"/>
-	<stop  offset="0.9887" style="stop-color:#00ADEE"/>
-</linearGradient>
-<path fill="url(#SVGID_2_)" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M33.7,0C41.7-0.6,51,2.4,56.8,9.7
-	l-23,23V0.3"/>
 <circle fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" cx="33.7" cy="33.2" r="22.5"/>
 </svg>

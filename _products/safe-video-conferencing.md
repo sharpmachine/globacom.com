@@ -27,7 +27,7 @@ security:
     technical_details: |
       <p>ProShield Safe Video Conferencing Basic supports both encrypted signaling known as SIPS which can be SSL or TLS with signed certificates. ProShield Safe Video Conferencing Basic also supports encrypted audio/video/media known as SRTP. Typical convention is to have the unencrypted SIP control channel on UDP port 5060 (although the standards also allow for using TCP port 5060 as well), and an SSL encrypted or TLS encrypted SIP control channel known as SIPS on TCP port 5061.</p>
       <p>SRTP is ideal for protecting Voice over IP traffic because it can be used in conjunction with header compression and has no effect on IP Quality of Service. This provides significant advantages, especially for voice traffic using low-bitrate voice codecs.</p>
-    infographic:
+    infographic: "globavideo_basic.svg"
     table: high-vs-basic
 
   - level: High
@@ -36,7 +36,7 @@ security:
     description: "With Safe Video Conferencing High, your phone line is more secure with the same Basic encryption, plus VPN from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform, providing a higher level of security."
     technical_details: |
       <p>Safe Video Conferencing High combines Safe Video Conferencing Basic, plus voice/video over IP (VoIP / Voice over Internet Protocol) and virtual private network technologies to offer a method for delivering secure voice/video. Because VoIP transmits digitized voice/video as a stream of data, the VoIP (Voice over Internet Protocol) VPN solution accomplishes voice/video encryption quite simply, applying standard data-encryption mechanisms. With Safe Video Conferencing High you have a VPN tunnel to our Datacenter in Switzerland. All calls can be tunneled both sides. Inside of the tunnel you have encrypted Voice and Signaling (TLS/SIP/SRTP).</p>
-    infographic:
+    infographic: "globavideo_high.svg"
     table: high-vs-basic
 
 ---

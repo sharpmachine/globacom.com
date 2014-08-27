@@ -26,6 +26,7 @@ header {
     right: 15px;
     bottom: 90px;
     left: 0;
+
   }
 
   @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
@@ -40,7 +41,7 @@ header {
     }
 
     .tagline {
-      bottom: 10px;
+      position: static;
     }
   }
 }
@@ -68,11 +69,19 @@ footer,
   }
 }
 
-// We Provide
-section.one {
+.bg-brand-blue-light {
   background-color: $brand-blue-light;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+// We Provide
+section.product-group {
 
   .big-number {
+    margin-top: 10px;
     color: white;
     font-size: 200px;
     @extend .oxygen-bold;
@@ -80,7 +89,7 @@ section.one {
   }
 
   .belief {
-    margin-top: 50px;
+    margin-top: 43px;
   }
 
   .consumer {
@@ -104,9 +113,33 @@ section.one {
     }
   }
 
-  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-    .executive .belief {
-      margin-top: 0;
+  // @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  //   text-align: center;  
+  // }
+
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+
+  hr {
+    margin: 60px 0 40px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.bg-white {
+  .product-overview {
+    .big-number,
+    .belief {
+      color: $brand-blue-dark !important;
+    }
+
+    .belief {
+      background-image: url(../img/shield-blue.png) !important;
+      background-size: 28px 33px !important;
     }
   }
 }
@@ -120,15 +153,22 @@ section.one {
   }
 }
 
-.levels-consumer {
+.levels-single {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.tower {
   @include img-retina("../img/tower.png", "../img/tower@2x.png", 122px, 285px);
+  margin-top: 45px;
 
   @media (min-width: $screen-md) and (max-width: $screen-md-max) {
     padding: 79px 12px;
   }
 }
 
-.levels-executive {
+.no-tower {
+  margin-top: 17px;
   padding: 0 35px;
 
   @media (min-width: $screen-md) and (max-width: $screen-md-max) {
@@ -557,25 +597,6 @@ footer {
   @media (max-width: $screen-xs-max) {
     margin-bottom: 30px;
   }
-}
-
-.one-point-two {
-  background-color: white !important;
-
-  .big-number,
-  .belief {
-    color: $brand-blue-dark !important;
-  }
-
-  .belief {
-    background-image: url(../img/shield-blue.png) !important;
-    background-size: 28px 33px !important;
-  }
-}
-
-.levels-single {
-  padding-top: 105px;
-  padding-bottom: 105px;
 }
 
 ul.dropdown-menu li.divider {
