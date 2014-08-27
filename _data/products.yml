@@ -1,32 +1,75 @@
 - name: GlobaVoIP
+  home_css_class: one 
   products:
     - name: Proshield Single-Line
-      tech_name: SIP account
+      tech_name: Phone line/SIP Accounts
+      short_description: "services for your business with 2 levels of security to choose from."
+      best_for: "Best for consumer companies and resellers for a single phone line"
+      belief_statement: "Because your privacy is paramount"
+      security: [High, Basic]
+      tower_bg: true
+      hr: true
       permalink: proshield-single-line
       id: 1
     - name: Proshield Multi-Line
-      tech_name: VirtualPBX
+      tech_name: Virtual PBX
+      short_description: "services for your business with 2 levels of security to choose from."
+      best_for: "Best for consumer companies and resellers for many phone lines"
+      belief_statement: "Because your words carry weight"
+      security: [High, Basic]
+      tower_bg: true
+      hr: true
       permalink: proshield-multi-line
       id: 2
     - name: ExecutiveShield
-      tech_name: VirtualPBX
+      subtitle: "For single & multi-line protection"
+      tech_name: "Vitural PBX & Phone line/SIP Accounts"
+      short_description: "exceeding all levels of international intelligence gathering."
+      best_for: For governments, financial and security organizations.
+      belief_statement: "Because your connections are crucial"
+      security: [Ultimate]
+      infographic: "phone-line2.png"
       permalink: executiveshield
       id: 3
 
 - name: GlobaVideo
+  home_css_class: one one-point-two
   products:
     - name: Safe Video Conferencing
+      tech_name: "Virtual Conference Room"
+      short_description: "services for your business with 2 levels of security to choose from."
+      best_for: "Best for consumer companies, governments, financial and security organizations."
+      belief_statement: "Because your collaboration is critical"
+      security: [Basic, High]
+      tower_bg: false
+      infographic: "globavideo.svg"
       permalink: safe-video-conferencing
       id: 4
 
 - name: GlobaTracker
+  home_css_class: one 
   products:
     - name: Safe GPS Tracking
+      tech_name: "Real-Time Tracking"
+      short_description: "services to keep your people safe."
+      best_for: "Best for consumer companies, governments, financial and security organizations."
+      belief_statement: "Because your people are important"
+      security: [Basic]
+      tower_bg: false
+      infographic: "globatracker.svg"
       permalink: safe-gps-tracking
       id: 5
 
 - name: GlobaCloud
+  home_css_class: one one-point-two
   products:
     - name: Safe Cloud Vault
+      tech_name: "Encrypted Data Storage"
+      short_description: "services to keep your data safe."
+      best_for: "Best for all."
+      belief_statement: "Because your information is indespensible"
+      security: [High]
+      tower_bg: false
+      infographic: "globacloud.svg"
       permalink: safe-cloud-vault
       id: 6

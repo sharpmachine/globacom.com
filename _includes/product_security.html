@@ -1,6 +1,8 @@
+{% if product.security_heading %}
 <div class="container">
 	<h3>{{ product.security_heading }}</h3>
 </div>
+{% endif %}
 
 {% for security in product.security %}
 <section class="product-benefits {{ security.css_class }}">
@@ -14,6 +16,7 @@
 				<!-- Tab panes -->
 				<div class="tab-content {% if security.css_class == 'tabs-inverse' %}tab-content-inverse{% endif %}">
 					<div class="tab-pane active" id="{{ security.level}}-overview">
+						{% if security.level %}
 						<h4>{{ security.level }} Security
 							{% if security.level == 'Basic' %}
 							 <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield">
@@ -25,6 +28,7 @@
 							{% endif %}
 							<br><span>{{ security.alias }}</span>
 						</h4>
+						{% endif %}
 						<p>{{ security.description }}</p>
 					</div>
 					<div class="tab-pane" id="{{ security.level }}-technical-details">

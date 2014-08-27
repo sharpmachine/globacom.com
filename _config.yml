@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   We believe in building safe, valuable phone connections around the world.
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://globacom.com"
-url: "http://localhost:4000"
+# url: "http://localhost:4000"
 
 # Contact Details
 email: hello@globacom.com

@@ -8,6 +8,7 @@ description: "Virtual Conference Room services for your business with 2 levels o
 best_for: "Best for consumer companies, governments, financial and security organizations."
 
 features:
+  - <strong>Access conference room with your desktop, laptop, iPhone, iPad and Android device via browser or app</strong> <i class="fa fa-apple"></i> <i class="fa fa-android"></i>.
   - Videoconferencing / Telepresence
   - Telemedicine with integration of all tools
   - Virtual Classroom

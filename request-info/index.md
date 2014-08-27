@@ -61,7 +61,7 @@ css_class: request-info
 					</div>
 					<div class="col-sm-6">
 						<div class="inspiring-photo hidden-xs">
-							<img src="/assets/img/blue-lake.jpg" class="img-responsive" width="555" alt="blue-lake">
+							<img src="/assets/img/matterhorn2.jpg" class="img-responsive" width="555" alt="matterhorn2">
 							<div class="inspiring-photo-words text-center belief">
 								“Because your <br>connections are <br>crucial”
 							</div>

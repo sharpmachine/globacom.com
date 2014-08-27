@@ -583,3 +583,17 @@ ul.dropdown-menu li.divider {
     display: none
   }
 }
+
+.group-name {
+  color: darken($brand-gray, 20%);
+}
+
+.product-description {
+  margin-bottom: 30px;
+}
+
+.list-group {
+  li i {
+    font-size: 18px
+  }
+}
