@@ -1,0 +1,12 @@
+- name: GlobaVoIP
+  url: https://91.135.74.11/
+- name: GlobaClould
+  url: http://cloud.globacom.com/
+- name: GlobaTrack
+  url: http://globatrack.globacom.com/
+- name: GlobaTelepresence
+  url: http://mcu.globacom.com/
+- name: GlobaShop
+  url: http://91.135.77.94/shop
+- name: Support
+  url: http://91.135.74.14/otrs/index.pl

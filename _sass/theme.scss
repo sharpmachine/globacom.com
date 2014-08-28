@@ -164,6 +164,11 @@ blockquote {
     & > li.active > a:hover {
       background-color: darken($brand-blue-light, 10%);
     }
+
+    .btn-group button {
+      height: 41px;
+      font-size: 14px;
+    }
   }
 }
 
