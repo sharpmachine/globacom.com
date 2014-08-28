@@ -50,10 +50,10 @@
   home_css_class: bg-brand-blue-light 
   products:
     - name: Safe GPS Tracking
-      tech_name: "Real-Time Tracking"
+      tech_name: "Real-Time Monitoring"
       short_description: "services to keep your people safe."
       best_for: "Best for consumer companies, governments, financial and security organizations."
-      belief_statement: "Because your people are important"
+      belief_statement: "Because your people are priority"
       security: [Basic]
       tower_bg: false
       infographic: "globatracker.svg"

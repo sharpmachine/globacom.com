@@ -9,13 +9,10 @@ best_for: "Best for consumer companies, governments, financial and security orga
 
 features:
   - <strong>Access conference room with your desktop, laptop, iPhone, iPad and Android device via browser or app</strong> <i class="fa fa-apple"></i> <i class="fa fa-android"></i>.
-  - Videoconferencing / Telepresence
-  - Telemedicine with integration of all tools
+  - Integrates with Telemedicine tools
   - Virtual Classroom
-  - Virtual Conference Room
-  - Collaborative working in combination of old technology (Standalone Videoconferencing Systems in Boardrooms)
-  - multi conferencing with unlimited participants capability
-  - Webconferencing
+  - Easily collaborate with remote teams
+  - Unlimited participants
 
 security_heading: "2 Levels of Security to Choose from:"
 security:
