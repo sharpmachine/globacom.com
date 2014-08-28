@@ -15,6 +15,11 @@ instagram: globacom
 
 # Build settings
 markdown: kramdown
+safe: false
+exclude:
+  - 'node_modules'
+assets:
+  css_compressor: sass
 
 collections:
   products:

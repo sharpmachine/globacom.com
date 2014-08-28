@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
     $('#message').hide();
 
     $('#submit')
-      .after('<img src="themes/bootstrap/img/ajax-loader.gif" class="loader" />')
+      .after('<img src="/assets/img/ajax-loader.gif" class="loader" />')
       .attr('disabled','disabled');
 
     $.post(action, {
@@ -23,7 +23,10 @@ jQuery(document).ready(function(){
       email: $('#email').val(),
       option1: $('#option1').val(),
       option2: $('#option2').val(),
-      option3: $('#option3').val()
+      option3: $('#option3').val(),
+      option4: $('#option4').val(),
+      option5: $('#option5').val(),
+      option6: $('#option6').val()
       // subject: $('#subject').val(),
       // comments: $('#comments').val(),
       // verify: $('#verify').val()

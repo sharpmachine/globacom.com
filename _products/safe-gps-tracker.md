@@ -33,7 +33,3 @@ security:
     table:
 
 ---
-
-<p>Chief Security Officers can locate and track your people in real-time to ensure they are always safe.</p> 
-<p>It can also serve well for keeping track of customer support response times for service technicians as well as knowing which technician to dispatch due to closest proximity to customer. GlobaTrack can be used as an ideal solution for vehicle fleet management.</p>
-<p>Our app is installed either on an iOS (Apple) or Android mobile devices.</p>

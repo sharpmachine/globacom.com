@@ -29,8 +29,8 @@ module.exports = function(grunt) {
           },
           all: [
           'Gruntfile.js',
-          'themes/bootstrap/js/*.js',
-          'themes/bootstrap/js/vendor/*.js'
+          'assets/javascripts/*.js',
+          'assets/javascripts/vendor/*.js'
           ]
         },
 
@@ -38,31 +38,15 @@ module.exports = function(grunt) {
         uglify: {
           dist: {
             files: {
-              'themes/bootstrap/js/plugins.min.js': [
-              'themes/bootstrap/js/affix.js',
-              'themes/bootstrap/js/transition.js',
-              'themes/bootstrap/js/tab.js',
-              'themes/bootstrap/js/button.js',
-              'themes/bootstrap/js/collapse.js',
-              'themes/bootstrap/js/dropdown.js',
-              'themes/bootstrap/js/vendor/ajax-form.js'
-              ],
-              'themes/bootstrap/js/scripts.min.js': [
-              'themes/bootstrap/js/scripts.js'
+              'assets/javascripts/plugins.min.js': [
+              'assets/javascripts/bootstrap/affix.js',
+              'assets/javascripts/bootstrap/transition.js',
+              'assets/javascripts/bootstrap/tab.js',
+              'assets/javascripts/bootstrap/button.js',
+              'assets/javascripts/bootstrap/collapse.js',
+              'assets/javascripts/bootstrap/dropdown.js',
+              'assets/javascripts/vendor/ajax-form.js'
               ]
-            }
-          }
-        },
-
-        less: {
-          development: {
-            options: {
-              paths: ["less"],
-              yuicompress: true,
-              cleancss: true
-            },
-            files: {
-              "themes/bootstrap/css/bootstrap.css": "themes/bootstrap/less/bootstrap.less"
             }
           }
         },
@@ -81,8 +65,8 @@ module.exports = function(grunt) {
           },
           js: {
             files: [
-            'themes/bootstrap/js/scripts.js',
-            'themes/bootstrap/js/vendor/*.js'
+            'assets/javascripts/scripts.js',
+            'assets/javascripts/vendor/*.js'
             ],
             tasks: ['uglify']
           },
@@ -91,17 +75,17 @@ module.exports = function(grunt) {
           },
           livereload: {
             files: [
-            'themes/bootstrap/css/*.css',
-            'themes/bootstrap/js/scripts.min.js',
-            'themes/bootstrap/js/vendor/*.js',
-            'themes/bootstrap/index.html',
-            'content/*.md',
-            'content/*/*.md',
-            'content/*/*/*.md',
-            'content/*.html'
+            // 'themes/bootstrap/css/*.css',
+            // 'assets/javascripts/scripts.min.js',
+            // 'assets/javascripts/vendor/*.js',
+            // 'themes/bootstrap/index.html',
+            // 'content/*.md',
+            // 'content/*/*.md',
+            // 'content/*/*/*.md',
+            // 'content/*.html'
             ],
             options: {
-              livereload: true
+              livereload: false
             }
           }
         },
@@ -116,10 +100,10 @@ module.exports = function(grunt) {
                   // Set to true to enable the following options…
                   expand: true,
                   // cwd is 'current working directory'
-                  cwd: 'themes/bootstrap/img/',
+                  cwd: 'assets/img/',
                   src: ['**/*.png'],
                   // Could also match cwd line above. i.e. themes/bootstrap/img/
-                  dest: 'themes/bootstrap/img/compressed/',
+                  dest: 'assets/img/',
                   ext: '.png'
                 }
                 ]
@@ -133,10 +117,10 @@ module.exports = function(grunt) {
                   // Set to true to enable the following options…
                   expand: true,
                   // cwd is 'current working directory'
-                  cwd: 'themes/bootstrap/img/',
+                  cwd: 'assets/img/',
                   src: ['**/*.jpg'],
                   // Could also match cwd. i.e. themes/bootstrap/img/
-                  dest: 'themes/bootstrap/img/compressed/',
+                  dest: 'assets/img/',
                   ext: '.jpg'
                 }
                 ]
@@ -147,15 +131,14 @@ module.exports = function(grunt) {
     // load tasks
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // register task
     grunt.registerTask('imageopt', ['imagemin']); // execute on both .png and .jpg
     grunt.registerTask('imagepng', ['imagemin:png']); // only .png files
     grunt.registerTask('imagejpg', ['imagemin:jpg']);// only .jpg files
+    grunt.registerTask('build', ['uglify']);
     grunt.registerTask('default', [
         // 'jshint',
         'uglify',

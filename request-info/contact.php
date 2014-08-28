@@ -21,6 +21,9 @@ $email = $_POST['email'];
 $option1 = $_POST['option1'];
 $option2 = $_POST['option2'];
 $option3 = $_POST['option3'];
+$option4 = $_POST['option4'];
+$option5 = $_POST['option5'];
+$option6 = $_POST['option6'];
 
 if(trim($name) == '') {
 	echo '<div class="row"><div class="col-xs-12 col-sm-6 col-sm-offset-6"><div class="alert alert-warning error_message">Attention! You must enter your name.</div></div></div>';
@@ -61,6 +64,7 @@ if(trim($name) == '') {
 
 //$address = "example@themeforest.net";
 $address = "hello@globacom.com";
+// $address = "jesse@sharpmachinemedia.com";
 
 
 // Configuration option.
@@ -82,7 +86,7 @@ $e_content .= "Address: $your_address \n$city $zip $country" . PHP_EOL . PHP_EOL
 $e_content .= "Moble: $mobile" . PHP_EOL . PHP_EOL;
 $e_content .= "Landline: $landline" . PHP_EOL . PHP_EOL;
 $e_content .= "Email: $email" . PHP_EOL . PHP_EOL;
-$e_content .= "Interested in: \n$option1 \n$option2 \n$option3" . PHP_EOL . PHP_EOL;
+$e_content .= "Interested in: \n$option1 \n$option2 \n$option3 \n$option4 \n$option5 \n$option6" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email at $email.";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );

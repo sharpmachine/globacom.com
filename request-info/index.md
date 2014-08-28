@@ -16,7 +16,7 @@ css_class: request-info
 		</div>
 		<div id="contact">
 			<div class="row">
-				<form role="form" method="post" action="request-info/contact.php" name="contactform" id="contactform">
+				<form role="form" method="post" action="contact.php" name="contactform" id="contactform">
 					<div class="col-xs-12">
 						<p>Simply fill out the form below and a person from our sales team will be in touch with you within the next business day.  <strong>Because we value your privacy we promise to never share your contact details with other companies.</strong></p>
 						<br>
