@@ -5,345 +5,502 @@ permalink: /css/
 ---
 
 <div class="container">
-	<h1>Theme</h1>
+  <h1>Theme</h1>
 
-	<p class="lead">Global CSS settings for Globacom.</p>
+  <p class="lead">Global CSS settings for Globacom.</p>
 
-	<ol>
-		<li><a href="#typography">Typography</a></li>
-		<li><a href="#tables">Tables</a></li>
-		<li><a href="#forms">Forms</a></li>
-		<li><a href="#buttons">Buttons</a></li>
-	</ol>
+  <p>To use the global theme on other Globacom sites, include the following in the head section of the site:</p>
+  <div class="well">
+    <code>&lt;link rel="stylesheet" href="http://globacom.com/assets/css/globatheme.css"&gt;</code>
+  </div>
+  <p>And put this is the footer your site, after the jQuery include:</p>
+  <div class="well">
+    <code>&lt;script src="http://globacom.com/assets/javascripts/plugins.min.js">&lt;/script&gt;</code>
+  </div>
 
-	<hr>
+  <ol>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+  </ol>
 
-	<h2><a name="typography" id="typography">Typography</a></h2>
+  <hr>
 
-	<h3>Headings</h3>
+  <h2><a name="typography" id="typography">Typography</a></h2>
 
-	<h1>h1. Bootstrap heading</h1>
-	<h2>h2. Bootstrap heading</h2>
-	<h3>h3. Bootstrap heading</h3>
-	<h4>h4. Bootstrap heading</h4>
-	<h5>h5. Bootstrap heading</h5>
-	<h6>h6. Bootstrap heading</h6>
+  <h3>Headings</h3>
 
-	<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
-	<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-	<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-	<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-	<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-	<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+  <h1>h1. Bootstrap heading</h1>
+  <h2>h2. Bootstrap heading</h2>
+  <h3>h3. Bootstrap heading</h3>
+  <h4>h4. Bootstrap heading</h4>
+  <h5>h5. Bootstrap heading</h5>
+  <h6>h6. Bootstrap heading</h6>
 
-	<h3>Paragraphs</h3>
+  <div class="well">
+    <code>
+      &lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt; <br>
+      &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt; <br>
+      &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt; <br>
+      &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt; <br>
+      &lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt; <br>
+      &lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt; <br>
+    </code>
+  </div>
 
-	<p class="lead">p.lead Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+  <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+  <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+  <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+  <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+  <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+  <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
 
-	<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+  <div class="well">
+    <code>
+      &lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt; <br>
+      &lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt; <br>
+      &lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt; <br>
+      &lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt; <br>
+      &lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt; <br>
+      &lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt; <br>
+    </code>
+  </div>
 
-	<h3>Lists</h3>
+  <h3>Paragraphs</h3>
 
-	<ol>
-		<li>Ordered List.</li>
-		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-		<li>Aliquam tincidunt mauris eu risus.</li>
-	</ol>
+  <p class="lead">p.lead Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
 
-	<ul>
-		<li>Unordered List.</li>
-		<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-		<li>Aliquam tincidunt mauris eu risus.</li>
-	</ul>
+  <div class="well">
+    <code>
+      &lt;p class="lead"&gt;p.lead Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.&lt;/p&gt;
+    </code>
+  </div>
 
-	<h3>Blockquotes</h3>
+  <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-	<blockquote>
-		<p>Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-	</blockquote>
-	
-	<hr>
+  <div class="well">
+    <code>
+      &lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href="#"&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
+    </code>
+  </div>
 
-	<h2><a name="tables" id="tables">Tables</a></h2>
+  <h3>Lists</h3>
 
-	<table class="table table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>Option 1</th>
-				<th>Option 2</th>
-				<th>Option 3</th>
-				<th class="font-light">Option 4</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-			</tr>
-			<tr>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-			</tr>
-			<tr>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-				<td>Item 1</td>
-			</tr>
-		</tbody>
-	</table>
+  <ol>
+    <li>Ordered List.</li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+  </ol>
 
-	<hr>
+  <ul>
+    <li>Unordered List.</li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+  </ul>
 
-	<h2><a name="forms" id="forms">Forms</a></h2>
+  <div class="well">
+    <code>
+      &lt;ol&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Ordered List.&lt;/li&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt; <br>
+      &lt;/ol&gt; <br>
+      <br>
+      &lt;ul&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Unordered List.&lt;/li&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt; <br>
+      &emsp;&emsp;&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt; <br>
+      &lt;/ul&gt; <br>
+    </code>
+  </div>
 
-	<form role="form">
-		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-		</div>
-		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-		</div>
-		<div class="form-group">
-			<label for="select">Select</label>
-			<select class="form-control">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-		</div>
-		<div class="form-group">
-			<label for="textarea">Text Area</label>
-			<textarea class="form-control" rows="3"></textarea>
-		</div>
-		<div class="form-group">
-			<label for="exampleInputFile">File input</label>
-			<input type="file" id="exampleInputFile">
-			<p class="help-block">Example block-level help text here.</p>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				Option one is this and that&mdash;be sure to include why it's great
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-				Option two can be something else and selecting it will deselect option one
-			</label>
-		</div>
-		<div class="checkbox">
-			<input type="checkbox" id="checkbox-1" />
-			<label for="checkbox-1"><span class="sr-only">Checkbox</span></label>
-			<div class="checkbox-label">Check Me</div>
-		</div>
-		<br>
-		<button type="submit" class="btn btn-default">Submit</button>
-	</form>
+  <h3>Blockquotes</h3>
 
-	<hr>
+  <blockquote>
+    <p>Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+  </blockquote>
 
-	<h2><a name="buttons" id="buttons">Buttons</a></h2>
-	
-	<h3>Large</h3>
-	
-	<p>
-		<button type="button" class="btn btn-lg btn-default">Default</button>
-		<button type="button" class="btn btn-lg btn-primary">Primary</button>
-		<button type="button" class="btn btn-lg btn-success">Success</button>
-		<button type="button" class="btn btn-lg btn-info">Info</button>
-		<button type="button" class="btn btn-lg btn-warning">Warning</button>
-		<button type="button" class="btn btn-lg btn-danger">Danger</button>
-		<button type="button" class="btn btn-lg btn-link">Link</button>
-	</p>
+  <div class="well">
+    <code>
+      &lt;blockquote&gt; <br>
+      &emsp;&emsp;&lt;p&gt;Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt; <br>
+      &lt;/blockquote&gt;
+    </code>
+  </div>
+  
+  <hr>
 
-	<h4>With Icons</h4>
-	<p>
-		<button type="button" class="btn btn-lg btn-default btn-with-icon">
-			<div class="btn-label">Cancel</div>
-			<div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
-		</button>
-		<button type="button" class="btn btn-lg btn-primary btn-with-icon">
-			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
-		</button>
-		<button type="button" class="btn btn-lg btn-info btn-with-icon">
-			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
-		</button>
-	</p>
+  <h2><a name="tables" id="tables">Tables</a></h2>
 
-	<h3>Defaut</h3>
-	<p>
-		<button type="button" class="btn btn-default">Default</button>
-		<button type="button" class="btn btn-primary">Primary</button>
-		<button type="button" class="btn btn-success">Success</button>
-		<button type="button" class="btn btn-info">Info</button>
-		<button type="button" class="btn btn-warning">Warning</button>
-		<button type="button" class="btn btn-danger">Danger</button>
-		<button type="button" class="btn btn-link">Link</button>
-	</p>
-	<h4>With icons</h4>
-	<p>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Option 1</th>
+        <th>Option 2</th>
+        <th>Option 3</th>
+        <th class="font-light">Option 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+        <td>Item 1</td>
+      </tr>
+    </tbody>
+  </table>
 
-		<button type="button" class="btn btn-primary btn-with-icon">
-			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
-		</button>
+  <div class="well">
+    <code>
+      &lt;table class="table table-striped table-bordered"&gt; <br>
+      &emsp;&emsp;&lt;thead&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 1&lt;/th&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 2&lt;/th&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 3&lt;/th&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th class="font-light"&gt;Option 4&lt;/th&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
+      &emsp;&emsp;&lt;/thead&gt; <br>
+      &emsp;&emsp;&lt;tbody&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
+      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
+      &emsp;&emsp;&lt;/tbody&gt; <br>
+      &lt;/table&gt; <br>
+    </code>
+  </div>
 
-		<button type="button" class="btn btn-info btn-with-icon">
-			<div class="btn-label">Info</div>
-			<div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
-		</button>
-	</p>
+  <hr>
 
-	<h3>Small</h3>
-	<p>
-		<button type="button" class="btn btn-sm btn-default">Default</button>
-		<button type="button" class="btn btn-sm btn-primary">Primary</button>
-		<button type="button" class="btn btn-sm btn-success">Success</button>
-		<button type="button" class="btn btn-sm btn-info">Info</button>
-		<button type="button" class="btn btn-sm btn-warning">Warning</button>
-		<button type="button" class="btn btn-sm btn-danger">Danger</button>
-		<button type="button" class="btn btn-sm btn-link">Link</button>
-	</p>
+  <h2><a name="forms" id="forms">Forms</a></h2>
 
-	<h3>Extra Small</h3>
-	<p>
-		<button type="button" class="btn btn-xs btn-default">Default</button>
-		<button type="button" class="btn btn-xs btn-primary">Primary</button>
-		<button type="button" class="btn btn-xs btn-success">Success</button>
-		<button type="button" class="btn btn-xs btn-info">Info</button>
-		<button type="button" class="btn btn-xs btn-warning">Warning</button>
-		<button type="button" class="btn btn-xs btn-danger">Danger</button>
-		<button type="button" class="btn btn-xs btn-link">Link</button>
-	</p>
-	<hr>
+  <form role="form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="select">Select</label>
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="textarea">Text Area</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-1" />
+      <label for="checkbox-1"><span class="sr-only">Checkbox</span></label>
+      <div class="checkbox-label">Check Me</div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
 
-	<h1>Components</h1>
+  <div class="well">
+    <code>
+      
+      &lt;form role="form"&gt; <br>
+      &lt;div class="form-group"&gt; <br>
+      &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt; <br>
+      &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="form-group"&gt; <br>
+      &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt; <br>
+      &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="form-group"&gt; <br>
+      &lt;label for="select"&gt;Select&lt;/label&gt; <br>
+      &lt;select class="form-control"&gt; <br>
+      &lt;option&gt;1&lt;/option&gt; <br>
+      &lt;option&gt;2&lt;/option&gt; <br>
+      &lt;option&gt;3&lt;/option&gt; <br>
+      &lt;option&gt;4&lt;/option&gt; <br>
+      &lt;option&gt;5&lt;/option&gt; <br>
+      &lt;/select&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="form-group"&gt; <br>
+      &lt;label for="textarea"&gt;Text Area&lt;/label&gt; <br>
+      &lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="form-group"&gt; <br>
+      &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt; <br>
+      &lt;input type="file" id="exampleInputFile"&gt; <br>
+      &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="radio"&gt; <br>
+      &lt;label&gt; <br>
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt; <br>
+      Option one is this and that&mdash;be sure to include why it's great
+      &lt;/label&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="radio"&gt; <br>
+      &lt;label&gt; <br>
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt; <br>
+      Option two can be something else and selecting it will deselect option one
+      &lt;/label&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;div class="checkbox"&gt; <br>
+      &lt;input type="checkbox" id="checkbox-1" /&gt; <br>
+      &lt;label for="checkbox-1"&gt;&lt;span class="sr-only"&gt;Checkbox&lt;/span&gt;&lt;/label&gt; <br>
+      &lt;div class="checkbox-label"&gt;Check Me&lt;/div&gt; <br>
+      &lt;/div&gt; <br>
+      &lt;br&gt; <br>
+      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt; <br>
+      &lt;/form&gt; <br>
 
-	<h2>Collapse</h2>
+    </code>
+  </div>
 
-	<div class="panel-group" id="accordion">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-						Collapsible Group Item #1
-						<span class="collapse-open pull-right"></span>
-						<div class="triangle pull-right"></div>
-					</a>
-				</h4>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse in">
-				
-				<div class="panel-body">
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, animi.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-						Collapsible Group Item #2
-						<span class="collapse-open pull-right"></span>
-						<div class="triangle pull-right"></div>
-					</a>
-				</h4>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse">
-				<div class="panel-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-						Collapsible Group Item #3
-						<span class="collapse-open pull-right"></span>
-						<div class="triangle pull-right"></div>
-					</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse">
-				<div class="panel-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<hr>
+  <hr>
 
-	<h2>Navs</h2>
-	
+  <h2><a name="buttons" id="buttons">Buttons</a></h2>
+  
+  <h3>Large</h3>
+  
+  <p>
+    <button type="button" class="btn btn-lg btn-default">Default</button>
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+    <button type="button" class="btn btn-lg btn-link">Link</button>
+  </p>
+
+  <h4>With Icons</h4>
+  <p>
+    <button type="button" class="btn btn-lg btn-default btn-with-icon">
+      <div class="btn-label">Cancel</div>
+      <div class="btn-icon"><span class="glyphicon glyphicon-ban-circle"></span></div>
+    </button>
+    <button type="button" class="btn btn-lg btn-primary btn-with-icon">
+      <div class="btn-label">Info</div>
+      <div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
+    </button>
+    <button type="button" class="btn btn-lg btn-info btn-with-icon">
+      <div class="btn-label">Info</div>
+      <div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
+    </button>
+  </p>
+
+  <h3>Defaut</h3>
+  <p>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </p>
+  <h4>With icons</h4>
+  <p>
+
+    <button type="button" class="btn btn-primary btn-with-icon">
+      <div class="btn-label">Info</div>
+      <div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
+    </button>
+
+    <button type="button" class="btn btn-info btn-with-icon">
+      <div class="btn-label">Info</div>
+      <div class="btn-icon"><span class="icon icon-mail-compose"></span></div>
+    </button>
+  </p>
+
+  <h3>Small</h3>
+  <p>
+    <button type="button" class="btn btn-sm btn-default">Default</button>
+    <button type="button" class="btn btn-sm btn-primary">Primary</button>
+    <button type="button" class="btn btn-sm btn-success">Success</button>
+    <button type="button" class="btn btn-sm btn-info">Info</button>
+    <button type="button" class="btn btn-sm btn-warning">Warning</button>
+    <button type="button" class="btn btn-sm btn-danger">Danger</button>
+    <button type="button" class="btn btn-sm btn-link">Link</button>
+  </p>
+
+  <h3>Extra Small</h3>
+  <p>
+    <button type="button" class="btn btn-xs btn-default">Default</button>
+    <button type="button" class="btn btn-xs btn-primary">Primary</button>
+    <button type="button" class="btn btn-xs btn-success">Success</button>
+    <button type="button" class="btn btn-xs btn-info">Info</button>
+    <button type="button" class="btn btn-xs btn-warning">Warning</button>
+    <button type="button" class="btn btn-xs btn-danger">Danger</button>
+    <button type="button" class="btn btn-xs btn-link">Link</button>
+  </p>
+  <hr>
+
+  <h1>Components</h1>
+
+  <h2>Collapse</h2>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Collapsible Group Item #1
+            <span class="collapse-open pull-right"></span>
+            <div class="triangle pull-right"></div>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        
+        <div class="panel-body">
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, animi.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+            Collapsible Group Item #2
+            <span class="collapse-open pull-right"></span>
+            <div class="triangle pull-right"></div>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+            Collapsible Group Item #3
+            <span class="collapse-open pull-right"></span>
+            <div class="triangle pull-right"></div>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+
+  <h2>Navs</h2>
+  
 </div>
 
 <div class="container">
-	<h3>Tabs</h3>
+  <h3>Tabs</h3>
 </div>
 
 <section class="blue-light tabs">
-	<div class="container">
-		<ul class="nav nav-tabs">
-			<li class="active"><a href="#home" data-toggle="tab">Overview</a></li>
-			<li><a href="#profile" data-toggle="tab">Technical Details</a></li>
-			<li><a href="#messages" data-toggle="tab">Messages</a></li>
-		</ul>
-		<!-- Tab panes -->
-		<div class="tab-content">
-			<div class="tab-pane active" id="home">
-				<h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
-				<p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
-			</div>
-			<div class="tab-pane" id="profile">...</div>
-			<div class="tab-pane" id="messages">...</div>
-		</div>
-	</div>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Overview</a></li>
+      <li><a href="#profile" data-toggle="tab">Technical Details</a></li>
+      <li><a href="#messages" data-toggle="tab">Messages</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home">
+        <h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
+        <p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
+      </div>
+      <div class="tab-pane" id="profile">...</div>
+      <div class="tab-pane" id="messages">...</div>
+    </div>
+  </div>
 </section>
 <div class="container hidden">
-	<h4>Tabs Inverse (for use when using two tabs in the same section)</h4>
+  <h4>Tabs Inverse (for use when using two tabs in the same section)</h4>
 </div>
 <section class="tabs-inverse">
-	<div class="container">
-		<ul class="nav nav-tabs nav-tabs-inverse">
-			<li class="active"><a href="#home2" data-toggle="tab">Overview</a></li>
-			<li><a href="#profile2" data-toggle="tab">Technical Details</a></li>
-			<li><a href="#messages2" data-toggle="tab">Messages</a></li>
-		</ul>
-		<!-- Tab panes -->
-		<div class="tab-content tab-content-inverse">
-			<div class="tab-pane active" id="home2">
-				<h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
-				<p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
-			</div>
-			<div class="tab-pane" id="profile2">...</div>
-			<div class="tab-pane" id="messages2">...</div>
-		</div>
-	</div>
+  <div class="container">
+    <ul class="nav nav-tabs nav-tabs-inverse">
+      <li class="active"><a href="#home2" data-toggle="tab">Overview</a></li>
+      <li><a href="#profile2" data-toggle="tab">Technical Details</a></li>
+      <li><a href="#messages2" data-toggle="tab">Messages</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content tab-content-inverse">
+      <div class="tab-pane active" id="home2">
+        <h4>Ultimate Security: The highest level of telecommunications security in existence. <br><span>(TLS/SIPS, SRTP, VPN & Encryption)</span></h4>
+        <p>With ExecutiveShield Ultimate, your phone line is secure with our Ultimate encryption from your device to our Globacom Carrier Grade Softswitch (GCGS) central platform. On top of that, the call audio is protected using our unique audio scrambling technology, giving you the highest level of telecommunications security in the world.  You can feel safe, knowing that no one else is listening, not even government intelligence agencies.</p>
+      </div>
+      <div class="tab-pane" id="profile2">...</div>
+      <div class="tab-pane" id="messages2">...</div>
+    </div>
+  </div>
 </section>
 
 <div class="container">
-	<h2>Page Header</h2>
+  <h2>Page Header</h2>
 </div>
 
 <div class="page-header text-center">
-	<div class="container">
-		<h1>Example page header</h1>
-	</div>
+  <div class="container">
+    <h1>Example page header</h1>
+  </div>
 </div>
