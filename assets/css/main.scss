@@ -4,35 +4,9 @@
 
 @charset "UTF-8";
 
-// Brand Colors
-$brand-blue-light:      #52BEF0;
-$brand-blue-dark:       #262F62;
-$brand-black:           #3A3A3A;
-$brand-gray:            #D3D3D3;
-
-// Typography
-$text-color:            	$brand-black !default;
-$font-family-sans-serif:  "Oxygen", Helvetica, Arial, sans-serif;
-$font-family-serif:       "Libre Baskerville", "Times New Roman", Times, serif;
-
-$font-size-base:          14px !default;
-$font-size-h1:            floor(($font-size-base * 3.43)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15 + 10)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 2.14)) !default; // ~24px
-
-// Buttons
-$btn-default-color:              #fff !default;
-$btn-default-bg:                 $brand-black !default;
-$btn-primary-bg:                 $brand-blue-light !default;
-$btn-info-bg:                    $brand-blue-dark !default;
-
-@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic");
-@import url("http://fonts.googleapis.com/css?family=Oxygen:400,300,700");
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-@import url("streamline.css");
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 
+	"custom",
 	"bootstrap",
 	"theme",
 	"style"
