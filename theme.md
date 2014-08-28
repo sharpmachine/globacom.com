@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Globacom CSS Style Guid
-permalink: /css/
+permalink: /globatheme/
 ---
 
 <div class="container">
@@ -38,16 +38,6 @@ permalink: /css/
   <h5>h5. Bootstrap heading</h5>
   <h6>h6. Bootstrap heading</h6>
 
-  <div class="well">
-    <code>
-      &lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt; <br>
-      &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt; <br>
-      &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt; <br>
-      &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt; <br>
-      &lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt; <br>
-      &lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt; <br>
-    </code>
-  </div>
 
   <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
   <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
@@ -56,34 +46,12 @@ permalink: /css/
   <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
   <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
 
-  <div class="well">
-    <code>
-      &lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt; <br>
-      &lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt; <br>
-      &lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt; <br>
-      &lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt; <br>
-      &lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt; <br>
-      &lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt; <br>
-    </code>
-  </div>
 
   <h3>Paragraphs</h3>
 
   <p class="lead">p.lead Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
 
-  <div class="well">
-    <code>
-      &lt;p class="lead"&gt;p.lead Senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.&lt;/p&gt;
-    </code>
-  </div>
-
   <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-  <div class="well">
-    <code>
-      &lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href="#"&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
-    </code>
-  </div>
 
   <h3>Lists</h3>
 
@@ -99,35 +67,11 @@ permalink: /css/
     <li>Aliquam tincidunt mauris eu risus.</li>
   </ul>
 
-  <div class="well">
-    <code>
-      &lt;ol&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Ordered List.&lt;/li&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt; <br>
-      &lt;/ol&gt; <br>
-      <br>
-      &lt;ul&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Unordered List.&lt;/li&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt; <br>
-      &emsp;&emsp;&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt; <br>
-      &lt;/ul&gt; <br>
-    </code>
-  </div>
-
   <h3>Blockquotes</h3>
 
   <blockquote>
     <p>Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
   </blockquote>
-
-  <div class="well">
-    <code>
-      &lt;blockquote&gt; <br>
-      &emsp;&emsp;&lt;p&gt;Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt; <br>
-      &lt;/blockquote&gt;
-    </code>
-  </div>
   
   <hr>
 
@@ -163,41 +107,6 @@ permalink: /css/
       </tr>
     </tbody>
   </table>
-
-  <div class="well">
-    <code>
-      &lt;table class="table table-striped table-bordered"&gt; <br>
-      &emsp;&emsp;&lt;thead&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 1&lt;/th&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 2&lt;/th&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th&gt;Option 3&lt;/th&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th class="font-light"&gt;Option 4&lt;/th&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
-      &emsp;&emsp;&lt;/thead&gt; <br>
-      &emsp;&emsp;&lt;tbody&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;tr&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;td&gt;Item 1&lt;/td&gt; <br>
-      &emsp;&emsp;&emsp;&emsp;&lt;/tr&gt; <br>
-      &emsp;&emsp;&lt;/tbody&gt; <br>
-      &lt;/table&gt; <br>
-    </code>
-  </div>
 
   <hr>
 
@@ -251,61 +160,6 @@ permalink: /css/
     <br>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
-
-  <div class="well">
-    <code>
-      
-      &lt;form role="form"&gt; <br>
-      &lt;div class="form-group"&gt; <br>
-      &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt; <br>
-      &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="form-group"&gt; <br>
-      &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt; <br>
-      &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="form-group"&gt; <br>
-      &lt;label for="select"&gt;Select&lt;/label&gt; <br>
-      &lt;select class="form-control"&gt; <br>
-      &lt;option&gt;1&lt;/option&gt; <br>
-      &lt;option&gt;2&lt;/option&gt; <br>
-      &lt;option&gt;3&lt;/option&gt; <br>
-      &lt;option&gt;4&lt;/option&gt; <br>
-      &lt;option&gt;5&lt;/option&gt; <br>
-      &lt;/select&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="form-group"&gt; <br>
-      &lt;label for="textarea"&gt;Text Area&lt;/label&gt; <br>
-      &lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="form-group"&gt; <br>
-      &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt; <br>
-      &lt;input type="file" id="exampleInputFile"&gt; <br>
-      &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="radio"&gt; <br>
-      &lt;label&gt; <br>
-      &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt; <br>
-      Option one is this and that&mdash;be sure to include why it's great
-      &lt;/label&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="radio"&gt; <br>
-      &lt;label&gt; <br>
-      &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt; <br>
-      Option two can be something else and selecting it will deselect option one
-      &lt;/label&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;div class="checkbox"&gt; <br>
-      &lt;input type="checkbox" id="checkbox-1" /&gt; <br>
-      &lt;label for="checkbox-1"&gt;&lt;span class="sr-only"&gt;Checkbox&lt;/span&gt;&lt;/label&gt; <br>
-      &lt;div class="checkbox-label"&gt;Check Me&lt;/div&gt; <br>
-      &lt;/div&gt; <br>
-      &lt;br&gt; <br>
-      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt; <br>
-      &lt;/form&gt; <br>
-
-    </code>
-  </div>
 
   <hr>
 
