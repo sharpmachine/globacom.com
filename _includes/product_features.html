@@ -1,0 +1,56 @@
+{% if product.expanded_features == true %}
+<section class="product-overview">
+	<div class="container">
+		<h2>{{ product.title }}</h2>
+		<p class="lead">{{ product.description }}</p>
+		<p class="lead lead-italic">{{ product.best_for }}</p>
+		<h3>Product Features</h3>
+
+		<div class="panel-group" id="accordion">
+			{% for feature in product.features %}
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ feature.id }}" class="{% if feature.id > 1 %}collapsed{% endif %}" >
+							{{ feature.parent }}
+							<span class="collapse-open pull-right"></span>
+							<div class="triangle pull-right"></div>
+						</a>
+					</h4>
+				</div>
+
+				<div id="collapse{{ feature.id }}" class="panel-collapse collapse {% if feature.id == 1 %}in{% endif %}">
+					<div class="panel-body">
+						<ul>
+							{% for item in feature.list %}
+							<li>{{ item }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</section>
+
+{% else %}
+
+<section class="product-overview">
+	<div class="container">
+		<h2>{{ page.title }}</h2>
+		<p class="lead">{{ page.description }}</p>
+		<p class="lead lead-italic">{{ page.best_for }}</p>
+		<h3>Product Features</h3>
+		<ul class="list-group">
+			{% for feature in page.features %}
+			<li class="list-group-item">{{ feature }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+{% endif %}

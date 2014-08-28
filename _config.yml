@@ -1,0 +1,26 @@
+# Site settings
+title: Globacom
+description: > # this means to ignore newlines until "baseurl:"
+  We believe in building safe, valuable phone connections around the world.
+
+# Contact Details
+email: hello@globacom.com
+phone: +41 44 505 9109
+address:
+  - street: 6340 Baar ZG <br>
+  - country: Switzerland
+facebook: globacom
+twitter: globacom
+instagram: globacom
+
+# Build settings
+markdown: kramdown
+safe: false
+exclude:
+  - 'node_modules'
+assets:
+  css_compressor: sass
+
+collections:
+  products:
+    output: true

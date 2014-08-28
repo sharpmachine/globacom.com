@@ -1,0 +1,35 @@
+<h4>Basic vs. High Comparison:</h4>
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>{{ product.title }}</th>
+			<th class="font-light">Basic</th>
+			<th class="font-light">High</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			{% if product.title == 'Safe Video Conferencing' %}
+			<td>Video Data Account</td>
+			{% else %}
+			<td>Phone Line/SIPS Account</td>
+			{% endif %}
+			<td class="text-center"><img src="/assets/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
+			<td class="text-center"><img src="/assets/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
+		</tr>
+		<tr>
+			{% if product.title == 'Safe Video Conferencing' %}
+			<td>Video Data Account w/ VPN</td>
+			{% else %}
+			<td>VPN</td>
+			{% endif %}
+			<td></td>
+			<td class="text-center"><img src="/assets/img/checkmark_shield@2x.png" width="21" height="25" alt="Checkmark Shield"></td>
+		</tr>
+		<tr>
+			<td>Call Audio Scrambling <br> <small>(Only available with <a href="{{ site.baseurl }}/executiveshield">ExecutiveShield</a>)</small></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,28 @@
+	<div class="all-products-bar">
+		<div class="container">
+			<h3 class="hidden-xs">All Products Overview <a href="#" class="all-products-more-info pull-right">More Info <span class="caret"></span></a></h3>
+			<h3 class="visible-xs">All Products Overview <br><a href="#" class="all-products-more-info">More Info <span class="caret"></span></a></h3>
+		</div>
+	</div>
+	<div class="all-products-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="lead">We are excited to offer three services with varying levels of security to protect your privacy:</p>
+				</div>
+				<!-- {% assign products = site.data.products %} -->
+				{% for product_groups in site.data.products %}
+					{% for product in product_groups.products %}
+				<div class="col-sm-4 product-description">
+					<div class="group-name">{{ product_groups.name }}</div>
+					<h4>{{ product.name }} {% if product.subtitle %}({{ product.subtitle }}){% endif %}</h4>
+					<p>{{ product.tech_name }} {{ product.short_description }}</p>
+					<p><em>{{ product.best_for }}</em></p>
+					<p><a href="{{ site.baseurl }}/{{ product.permalink }}">More Info</a></p>
+				</div>
+					{% endfor %}
+				{% endfor %}
+			</div>
+		</div>
+	</div><!-- END: .all-products-content -->
+</section>

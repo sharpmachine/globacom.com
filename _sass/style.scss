@@ -1,0 +1,641 @@
+// Custom Styles
+
+body {
+  padding-top: 50px;
+}
+
+/*..................................the header */
+header {
+  position: relative;
+  height: 715px;
+  padding-top: 65px;
+  background: url(../img/header-bg.jpg) top center no-repeat;
+  background-size: cover;
+
+  img.logo {
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 0 $brand-black;
+  }
+
+  .tagline {
+    position: absolute;
+    right: 15px;
+    bottom: 90px;
+    left: 0;
+
+  }
+
+  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    height: 600px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    height: 300px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .tagline {
+      position: static;
+    }
+  }
+}
+
+/*..................................the home page */
+section,
+footer {
+  padding-top: 45px;
+  padding-bottom: 60px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+footer,
+.one,
+.two {
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+}
+
+.bg-brand-blue-light {
+  background-color: $brand-blue-light;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+// We Provide
+section.product-group {
+
+  .big-number {
+    margin-top: 10px;
+    color: white;
+    font-size: 200px;
+    @extend .oxygen-bold;
+    line-height: 1;
+  }
+
+  .belief {
+    margin-top: 43px;
+  }
+
+  .consumer {
+    margin-bottom: 60px;
+  }
+
+  .executive,
+  .proshield-multi {
+    margin-top: 60px;
+  }
+
+  p.more-please {
+    margin: 30px 0 0;
+
+    a {
+      .icon {
+        position: relative;
+        top: 3px;
+        padding-left: 2px;
+      }
+    }
+  }
+
+  // @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  //   text-align: center;  
+  // }
+
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+
+  hr {
+    margin: 60px 0 40px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.bg-white {
+  .product-overview {
+    .big-number,
+    .belief {
+      color: $brand-blue-dark !important;
+    }
+
+    .belief {
+      background-image: url(../img/shield-blue.png) !important;
+      background-size: 28px 33px !important;
+    }
+  }
+}
+
+.levels {
+  padding: 67px 35px;
+  background: center center no-repeat;
+
+  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    margin-top: 30px;
+  }
+}
+
+.levels-single {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.tower {
+  @include img-retina("../img/tower.png", "../img/tower@2x.png", 122px, 285px);
+  margin-top: 45px;
+
+  @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    padding: 79px 12px;
+  }
+}
+
+.no-tower {
+  margin-top: 17px;
+  padding: 0 35px;
+
+  @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    padding: 0 13px;
+  }
+
+  @media (min-width: 0) and (max-width: $screen-sm) {
+    margin-top: 30px;
+  }
+}
+
+.level {
+  width: 100%;
+  padding: 22px 11px;
+  color: $brand-blue-dark;
+  @extend .oxygen-bold;
+  font-size: 22px;
+  border-bottom: 2px solid darken($brand-blue-light, 15%);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .big-number {
+    margin-top: -33px;
+    margin-bottom: 35px;
+  }
+
+  .levels-consumer {
+    margin-top: 72px;
+  }
+
+  .level {
+    text-align: left;
+  }
+
+  section.one .executive .belief {
+    margin-top: 0;
+  }
+}
+
+// Availability
+section.two {
+  background: $brand-gray center center no-repeat fixed;
+  @include img-retina("../img/countries.png", "../img/countries@2x.png", 933px, 529px);
+
+  .belief {
+    margin-top: 175px;
+  }
+
+  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .belief {
+      margin-top: 40px;
+    }
+  }
+}
+
+.countries {
+  font-size: 22px;
+  @include content-columns(4);
+}
+
+@media (max-width: $screen-xs-max) {
+  .countries {
+    @include content-columns(2);
+  }
+
+  section.two .belief {
+    margin-top: 40px;
+  }
+}
+
+// Footer
+footer {
+  color: white;
+  @extend .oxygen-light;
+  font-size: 30px;
+  background-color: $brand-blue-dark;
+
+  .belief {
+    margin-top: 35px;
+    font-size: 16px;
+    @include img-retina("../img/swiss-shield.png", "../img/swiss-shield@2x.png", 28px, 33px);
+  }
+
+  h2 {
+    color: white;
+  }
+
+  a {
+    color: white;
+    font-size: 30px;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  address {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .contact-details {
+      text-align: center;
+    }
+  }
+}
+
+// social media
+.social-media {
+  height: 53px;
+
+  a {
+    position: relative;
+    display: block;
+    float: left;
+    @include square(53px);
+    margin-right: 25px;
+    border-radius: 50%;
+    background-color: white;
+    @include transition(background-color ease 0.2s);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $brand-blue-light;
+      @include transition(background-color ease 0.2s);
+      i.fa {
+        color: white;
+        @include transition(color ease 0.2s);
+      }
+    }
+
+    i.fa {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 30px;
+      margin: auto;
+      color: $brand-blue-dark;
+
+      &.fa-facebook {
+        width: 13px;
+      }
+
+      &.fa-twitter {
+        width: 28px;
+      }
+
+      &.fa-instagram {
+        width: 26px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    width: 209px;
+    margin: 0 auto;
+  }
+}
+
+/*..................................the belief quotes */
+.belief {
+  padding-bottom: 42px;
+  color: white;
+  @extend .libre-baskerville-italic;
+  font-size: 30px;
+  background: bottom center no-repeat;
+  @include img-retina("../img/shield.png", "../img/shield@2x.png", 28px, 33px);
+}
+
+.tab-content {
+  padding: 15px;
+}
+
+.affix {
+  top: 50px;
+  width: 360px;
+}
+
+.affix-bottom {
+  bottom: 1400px;
+}
+
+/*..................................the request info page */
+// Page header
+.request-info-page-header {
+  background: $brand-blue-dark url(../img/sky-blue-header.jpg) bottom right no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.request-info {
+  form {
+    margin: 30px 0;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 0;
+    }
+
+    button {
+      .icon {
+        position: relative;
+        top: 4px;
+        font-size: 44px;
+      }
+    }
+  }
+}
+
+.inspiring-photo {
+  position: relative;
+  margin-top: 25px;
+}
+
+.inspiring-photo-words {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 222px;
+  height: 168px;
+  margin: auto;
+}
+
+.checkbox {
+  margin-bottom: 31px;
+  @media (min-width: 0) and (max-width: $screen-sm-max) {
+    margin-bottom: 33px;
+  }
+}
+
+#message {
+  margin-top: 20px;
+  display: none;
+}
+
+/*..................................the about page */
+.about-page-header {
+  background: $brand-blue-dark url(../img/mountain-peak.jpg) bottom center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.purpose {
+  blockquote {
+    margin-bottom: 0;
+  }
+}
+
+.about-banner {
+  position: relative;
+  margin-top: -46px;
+  width: 220px;
+  height: 565px;
+}
+
+.about-banner-content {
+  height: 565px - 30px;
+  background-color: $brand-blue-dark;
+
+  img {
+    padding-top: 92px;
+  }
+}
+
+.banner-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 30px 110px 0 110px;
+  border-color: $brand-blue-dark transparent transparent transparent;
+}
+
+.history-lesson {
+  margin-bottom: 30px;
+}
+
+.license-number p {
+  margin-bottom: 0;
+}
+
+/*..................................the product pages */
+// Page header
+.product-page-header {
+  background: $brand-blue-dark url(../img/matterhorn.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+// Overview section
+.product-overview {
+  #accordion,
+  .list-group {
+    margin-top: 30px;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+}
+
+// Benefits
+.comparison-chart {
+  padding-top: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 0;
+  }
+
+  h4 {
+    margin-top: 0;
+    color: $brand-blue-dark;
+  }
+
+  .table {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 60px;
+    }
+
+    & > thead {
+      & > tr {
+        & > th:first-child {
+          color: $brand-blue-light;
+        }
+      }
+    }
+
+    & > tbody {
+      & > tr {
+        & > td {
+          small {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-inverse .comparison-chart {
+  padding-top: 75px;
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 0;
+  }
+}
+
+// Get in touch
+.call-to-action {
+  padding-bottom: 50px;
+  color: $brand-blue-dark;
+  @extend .libre-baskerville-italic;
+  font-size: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    .text-right {
+      text-align: center;
+    }
+  }
+
+  a.btn {
+    @extend .oxygen-normal;
+  }
+
+  .border-top {
+    margin-top: -50px;
+    padding-top: 50px;
+    border-top: 2px solid lighten($brand-blue-light, 10%);
+  }
+}
+
+// All products overview
+.all-products-overview {
+  padding: 0;
+
+  h3 {
+    margin: 0;
+
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+
+    .all-products-more-info {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+
+.all-products-bar {
+  padding: 30px 0;
+  background-color: lighten($gray-light, 20%);
+
+  h3 {
+    margin: 0
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+.all-products-content {
+  display: none;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.product-description {
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 30px;
+  }
+}
+
+<<<<<<< HEAD:themes/bootstrap/less/style.less
+.one-point-two {
+  background-color: white !important;
+
+  .big-number,
+  .belief {
+    color: @brand-blue-dark !important;
+  }
+
+  .belief {
+    background-image: url(../img/shield-blue.png) !important;
+    background-size: 28px 33px !important;
+  }
+}
+
+.levels-single {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+=======
+ul.dropdown-menu li.divider {
+  &:last-child {
+    display: none
+  }
+}
+
+.group-name {
+  color: darken($brand-gray, 20%);
+}
+
+.product-description {
+  margin-bottom: 30px;
+}
+
+.list-group {
+  li i {
+    font-size: 18px
+  }
+}
+>>>>>>> jekyll:_sass/style.scss

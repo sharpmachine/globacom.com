@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign product = page %}
+
+<div class="page-header product-page-header">
+	<div class="container">
+		<h1 class="text-center">{{ product.intro }}</h1>	
+	</div>
+</div>
+
+{% include product_features.html %}
+
+{% include product_security.html %}
+
+{% include product_call_to_action.html %}
+
+{% include all_products.html %}
