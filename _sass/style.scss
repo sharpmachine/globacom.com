@@ -599,26 +599,6 @@ footer {
   }
 }
 
-<<<<<<< HEAD:themes/bootstrap/less/style.less
-.one-point-two {
-  background-color: white !important;
-
-  .big-number,
-  .belief {
-    color: @brand-blue-dark !important;
-  }
-
-  .belief {
-    background-image: url(../img/shield-blue.png) !important;
-    background-size: 28px 33px !important;
-  }
-}
-
-.levels-single {
-  padding-top: 105px;
-  padding-bottom: 105px;
-}
-=======
 ul.dropdown-menu li.divider {
   &:last-child {
     display: none
@@ -638,4 +618,3 @@ ul.dropdown-menu li.divider {
     font-size: 18px
   }
 }
->>>>>>> jekyll:_sass/style.scss
