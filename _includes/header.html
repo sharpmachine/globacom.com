@@ -17,23 +17,43 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 {% for group in site.data.products %}
-                  <li role="presentation" class="dropdown-header">{{ group.name }}</li>
-                  {% for product in group.products %}
-                    <li>
-                      <a href="{{ site.baseurl}}/{{product.permalink}}">
-                        <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield"> 
-                        {{ product.name}}
-                      </a>
-                    </li>
-                  {% endfor %}
-                  <li class="divider"></li>
+                <li role="presentation" class="dropdown-header">{{ group.name }}</li>
+                {% for product in group.products %}
+                <li>
+                  <a href="{{ site.baseurl}}/{{product.permalink}}">
+                    <img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield"> 
+                    {{ product.name}}
+                  </a>
+                </li>
+                {% endfor %}
+                <li class="divider"></li>
                 {% endfor %}
               </ul>
             </li>
-            <li class="visible-xs"><a href="http://customer.globacom.com/">Customer Login</a></li>
+            <li class="dropdown visible-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Login <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                {% for login in site.data.customer_logins %}
+                <li><a href="{{ login.url }}"><img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield"> {{ login.name }} <i class="fa fa-external-link"></i></a></li>
+                <li class="divider"></li>
+                {% endfor %}
+              </ul>
+            </li>
           </ul>
           <ul class="nav nav-pills pull-right hidden-xs">
-            <li class="active"><a href="http://customer.globacom.com/">Customer Login</a></li>
+            <li class="active">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Customer Login <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  {% for login in site.data.customer_logins %}
+                  <li><a href="{{ login.url }}"><img src="/assets/img/shield-blue.png" width="19" height="22" alt="Shield"> {{ login.name }} <i class="fa fa-external-link"></i></a></li>
+                  <li class="divider"></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
