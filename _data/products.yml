@@ -1,4 +1,4 @@
-- name: GlobaVoIP
+- name: GlobaSafeVoIP
   home_css_class: bg-brand-blue-light 
   products:
     - name: Proshield Single-Line
